@@ -1,0 +1,55 @@
+{
+  "n_samples": 77,
+  "n_probes": 769976,
+  "subtype_counts": {
+    "ACTH": 7,
+    "NS": 45,
+    "NA": 10,
+    "GH": 15
+  },
+  "cluster_sizes": {
+    "0": 6,
+    "1": 30,
+    "2": 11,
+    "3": 8,
+    "4": 22
+  },
+  "silhouette_k5": 0.4042,
+  "between_total_var_ratio": 2.3815,
+  "pc_top5_explained": [
+    0.268,
+    0.106,
+    0.053,
+    0.04,
+    0.029
+  ],
+  "lineage_score_NS_mean": -0.0458,
+  "lineage_score_secretory_mean": 0.0135,
+  "moller_key_beta_by_subtype": {
+    "GH": 0.5889272689819336,
+    "ACTH": 0.604390561580658,
+    "NS": 0.6287198066711426
+  },
+  "crosscohort_n_common_probes": 687463,
+  "crosscohort_tumor_clusters": [
+    0,
+    2,
+    3,
+    4
+  ],
+  "crosscohort_subtype_vs_cluster": {
+    "GH": {
+      "0": 1,
+      "4": 14
+    },
+    "ACTH": {
+      "3": 4,
+      "4": 3
+    },
+    "NS": {
+      "0": 34,
+      "3": 7,
+      "4": 4
+    }
+  }
+}

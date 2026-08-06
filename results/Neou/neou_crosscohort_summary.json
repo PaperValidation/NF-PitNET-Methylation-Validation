@@ -1,0 +1,66 @@
+{
+  "neou_n_samples": 86,
+  "neou_n_nfpt": 32,
+  "neou_stage_counts": {
+    "CushingSubclinical": 5,
+    "Hyperperprolactinemia": 10,
+    "Gonadotrophin": 1,
+    "MixedAcroHyperPRL": 3,
+    "Acromegaly": 19,
+    "Silent": 31,
+    "Hyperthyroidism": 6,
+    "CushingOvert": 11
+  },
+  "neou_lineage_counts": {
+    "SF1": 22,
+    "TPIT": 21,
+    "PIT1": 43
+  },
+  "common_probes_3cohort": 687463,
+  "variance_filtered_probes": 68746,
+  "pca_pc1": 0.2923,
+  "pca_pc2": 0.0967,
+  "pca_cum20": 0.6344,
+  "gse283928_tumor_clusters": {
+    "0": 70,
+    "2": 2,
+    "3": 22,
+    "4": 24
+  },
+  "neou_nfpt_vs_cluster": {
+    "NFPT": {
+      "0": 26,
+      "3": 2,
+      "4": 4
+    },
+    "Functioning": {
+      "0": 2,
+      "3": 15,
+      "4": 37
+    }
+  },
+  "threeway_cluster_counts": {
+    "Neou": {
+      "0": 28,
+      "2": 0,
+      "3": 17,
+      "4": 41
+    },
+    "GSE207937": {
+      "0": 35,
+      "2": 0,
+      "3": 13,
+      "4": 29
+    }
+  },
+  "neou_lineage_score_NFPT_mean": -0.1173,
+  "neou_lineage_score_Func_mean": -0.0104,
+  "neou_lineage_score_perm_p": 0.0,
+  "neou_moller_beta_NFPT_mean": 0.6873,
+  "neou_moller_beta_Func_mean": 0.5627,
+  "neou_moller_beta_perm_p": 0.0,
+  "gse207937_lineage_NS_mean": -0.0458,
+  "gse207937_lineage_other_mean": 0.0135,
+  "gse207937_moller_NS_mean": 0.6287,
+  "gse207937_moller_other_mean": 0.5971
+}

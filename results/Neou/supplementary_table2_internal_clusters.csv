@@ -1,0 +1,4 @@
+internal_cluster,n,nfpt_n,nfpt_pct,mean_moller_key_beta,mean_lineage_score,dominant_lineage,dominant_stage,cross_cohort_centroid,cross_cohort_counts
+int0,30,27,90.0,0.7027,-0.1203,SF1,Silent,0 (SF1-lineage),"c0=28, c3=2"
+int1,15,1,6.7,0.6275,0.0479,TPIT,CushingOvert,3 (TPIT),c3=15
+int2,41,4,9.8,0.5338,-0.0347,PIT1,Acromegaly,4 (PIT1),c4=41

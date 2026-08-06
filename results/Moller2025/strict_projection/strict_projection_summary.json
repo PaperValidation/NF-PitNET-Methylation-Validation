@@ -1,0 +1,62 @@
+{
+  "n_linked": 117,
+  "n_event": 28,
+  "event_rate": 0.25225225225225223,
+  "assigned_counts": {
+    "c0": 101,
+    "c3": 14,
+    "c4": 2
+  },
+  "centroid_mean_distance": {
+    "c0": 1153.2808282885844,
+    "c2": 1568.5322781529635,
+    "c3": 1235.4704671163079,
+    "c4": 1399.5868378264656
+  },
+  "strict_nonc0_vs_c0": {
+    "hr": 1.6314157715460493,
+    "lo": 0.6436584170176132,
+    "hi": 4.134984254507716,
+    "p": 0.3023218100579716
+  },
+  "strict_logrank_p": 0.30380684889459614,
+  "prognostic_riskhi": {
+    "hr": 2.138965889048047,
+    "lo": 0.9356353240726069,
+    "hi": 4.889912722187968,
+    "p": 0.07150404320115784
+  },
+  "multivariable": {
+    "risk_hi": {
+      "hr": 2.0866406340282,
+      "lo": 0.8954610900486478,
+      "hi": 4.862376695051111,
+      "p": 0.08835327301936104
+    },
+    "age": {
+      "hr": 0.9857803377909358,
+      "lo": 0.9529679913299047,
+      "hi": 1.0197224704463344,
+      "p": 0.4069945170739703
+    },
+    "sex": {
+      "hr": 1.1205625336227283,
+      "lo": 0.5048336994424051,
+      "hi": 2.4872753010464237,
+      "p": 0.7796272833231518
+    },
+    "inv": {
+      "hr": 1.968472611244989,
+      "lo": 0.8169219064272468,
+      "hi": 4.743273978498402,
+      "p": 0.13121704606894066
+    },
+    "vol": {
+      "hr": 1.0542055758701838,
+      "lo": 1.0158192453209762,
+      "hi": 1.0940424699717362,
+      "p": 0.005281905142790485
+    }
+  },
+  "note": "Independent GSE283928 c0-centroid projection: 101/117 (86%) M\u00f8ller NF-PitNET map to c0 (SF1-lineage), replicating the cross-cohort NFPT->c0 identity in an independent raw-idat set. The centroid-based c0-vs-non-c0 split does NOT predict regrowth (HR=1.63, p=0.30), showing the prognostic risk axis is a within-lineage refinement. The k3/k4/k5 risk axis (M\u00f8ller labels) predicts regrowth (HR=2.14, p=0.072; adjusted 2.09, p=0.088)."
+}

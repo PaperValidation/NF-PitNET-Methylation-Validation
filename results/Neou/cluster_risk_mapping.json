@@ -1,0 +1,99 @@
+{
+  "per_cluster_stats": {
+    "0": {
+      "n": 70,
+      "moller_beta_mean": 0.6014,
+      "moller_beta_sem": 0.0019,
+      "sf1_mean": 0.4183,
+      "tpit_mean": 0.4607,
+      "pit1_mean": 0.5904,
+      "lineage_score": -0.1073,
+      "global_beta_mean": 0.5083
+    },
+    "2": {
+      "n": 2,
+      "moller_beta_mean": 0.6175,
+      "moller_beta_sem": 0.0017,
+      "sf1_mean": 0.5609,
+      "tpit_mean": 0.4451,
+      "pit1_mean": 0.6299,
+      "lineage_score": 0.0234,
+      "global_beta_mean": 0.5114
+    },
+    "3": {
+      "n": 22,
+      "moller_beta_mean": 0.5834,
+      "moller_beta_sem": 0.0065,
+      "sf1_mean": 0.5057,
+      "tpit_mean": 0.4454,
+      "pit1_mean": 0.5333,
+      "lineage_score": 0.0163,
+      "global_beta_mean": 0.5024
+    },
+    "4": {
+      "n": 24,
+      "moller_beta_mean": 0.5776,
+      "moller_beta_sem": 0.0056,
+      "sf1_mean": 0.3961,
+      "tpit_mean": 0.4793,
+      "pit1_mean": 0.4291,
+      "lineage_score": -0.0581,
+      "global_beta_mean": 0.4936
+    }
+  },
+  "pairwise_moller_perm_p": {
+    "c0_vs_c2": {
+      "diff": -0.0161,
+      "perm_p": 0.15568
+    },
+    "c0_vs_c3": {
+      "diff": 0.018,
+      "perm_p": 0.0009
+    },
+    "c0_vs_c4": {
+      "diff": 0.0237,
+      "perm_p": 0.0001
+    },
+    "c2_vs_c3": {
+      "diff": 0.034,
+      "perm_p": 0.14109
+    },
+    "c2_vs_c4": {
+      "diff": 0.0398,
+      "perm_p": 0.0356
+    },
+    "c3_vs_c4": {
+      "diff": 0.0058,
+      "perm_p": 0.50925
+    }
+  },
+  "loo_accuracy": 0.8983,
+  "loo_fraction_to_c0": 0.5339,
+  "loo_confusion": {
+    "0": {
+      "0": 62,
+      "3": 5,
+      "4": 3
+    },
+    "2": {
+      "2": 2
+    },
+    "3": {
+      "0": 1,
+      "3": 18,
+      "4": 3
+    },
+    "4": {
+      "4": 24
+    }
+  },
+  "neou_nfpt_observed_c0_frac": 0.8125,
+  "neou_nfpt_null_c0_frac_mean": 0.325,
+  "neou_nfpt_null_c0_frac_std": 0.0663,
+  "neou_nfpt_null_95ci": [
+    0.1875,
+    0.4688
+  ],
+  "neou_nfpt_perm_p": 0.0,
+  "interpretation": "Cluster 0 Moller-key beta = 0.6014. Highest cluster = c2 (0.6175). Cluster 0 IS NOT the highest -> NFPT maps to LOW/MID cluster (narrative needs revision). Lowest lineage score cluster = c0 (lineage_score=-0.1073) -> this is the TPIT/PIT1 cluster (Moller k4 equivalent). LOO centroid accuracy = 0.898 (bias check). NFPT->c0 permutation p = 0.00000 (significant)."
+}

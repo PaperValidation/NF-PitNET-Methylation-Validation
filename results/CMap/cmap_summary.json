@@ -1,0 +1,119 @@
+{
+ "class_counts": {
+  "BET/BRD": 2713,
+  "HSP90": 359,
+  "HDAC": 288,
+  "SFK/ABL": 239,
+  "mTOR/PI3K": 223,
+  "EGFR/HER": 118,
+  "CDK": 101,
+  "MEK": 61,
+  "RAF/MEK": 32,
+  "Glucocorticoid": 18,
+  "Hormone": 9,
+  "JAK/STAT": 8
+ },
+ "n_positive": 15452,
+ "top20": [
+  {
+   "instance": "CPC001 PC3 24H-ag 825-10.0",
+   "label": "ag",
+   "reversal_score": 77.59
+  },
+  {
+   "instance": "LJP005 HEPG2 24H-vemurafenib-3.33",
+   "label": "vemurafenib",
+   "reversal_score": 79.51
+  },
+  {
+   "instance": "LJP006 HA1E 24H-JW-7-24-1-10",
+   "label": "JW-7-24-1",
+   "reversal_score": 80.61
+  },
+  {
+   "instance": "LJP005 SKBR3 24H-nilotinib-10",
+   "label": "nilotinib",
+   "reversal_score": 83.09
+  },
+  {
+   "instance": "LJP006 MCF7 24H-CGP-60474-3.33",
+   "label": "CGP-60474",
+   "reversal_score": 83.11
+  },
+  {
+   "instance": "LJP009 HT29 24H-chelerythrine chloride-10",
+   "label": "chloride",
+   "reversal_score": 86.66
+  },
+  {
+   "instance": "LJP005 PC3 24H-foretinib-0.12",
+   "label": "foretinib",
+   "reversal_score": 88.6
+  },
+  {
+   "instance": "LJP006 HA1E 24H-AZD-7762-0.37",
+   "label": "AZD-7762",
+   "reversal_score": 88.64
+  },
+  {
+   "instance": "LJP006 LNCAP 3H-AZD-8055-1.11",
+   "label": "AZD-8055",
+   "reversal_score": 90.41
+  },
+  {
+   "instance": "LJP006 HA1E 24H-selumetinib-10",
+   "label": "selumetinib",
+   "reversal_score": 93.85
+  },
+  {
+   "instance": "LJP005 HA1E 24H-PD-0325901-3.33",
+   "label": "PD-0325901",
+   "reversal_score": 105.12
+  },
+  {
+   "instance": "CPC014 A375 6H-s1173-10.0",
+   "label": "s1173",
+   "reversal_score": 109.19
+  },
+  {
+   "instance": "CPC009 PC3 6H-salmeterol-10.0",
+   "label": "salmeterol",
+   "reversal_score": 110.75
+  },
+  {
+   "instance": "CPC012 HT29 6H-BRD-K27170250-10.0",
+   "label": "BRD-K27170250",
+   "reversal_score": 110.75
+  },
+  {
+   "instance": "CPC007 VCAP 6H-BRD-K21170640-10.0",
+   "label": "BRD-K21170640",
+   "reversal_score": 112.46
+  },
+  {
+   "instance": "LJP007 A549 24H-dasatinib-0.12",
+   "label": "dasatinib",
+   "reversal_score": 132.02
+  },
+  {
+   "instance": "LJP006 HA1E 24H-WZ-4-145-0.37",
+   "label": "WZ-4-145",
+   "reversal_score": 170.41
+  },
+  {
+   "instance": "CPC015 MCF7 6H-pirenperone-10.0",
+   "label": "pirenperone",
+   "reversal_score": 254.54
+  },
+  {
+   "instance": "CPC014 MCF7 6H-gr-235-10.0",
+   "label": "gr-235",
+   "reversal_score": 48972.37
+  },
+  {
+   "instance": "CPC009 PC3 6H-BRD-K45205755-10.0",
+   "label": "BRD-K45205755",
+   "reversal_score": 48972.49
+  }
+ ]
+}

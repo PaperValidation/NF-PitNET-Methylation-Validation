@@ -1,0 +1,56 @@
+{
+  "description": "Independent external validation of the c0 (SF1-lineage) methylation mapping across independent cohorts (3x EPIC-850K + 1x HM450 cross-platform), projected (no k-labels) onto the same GSE283928 c0/c2/c3/c4 centroids.",
+  "centroid_source": "GSE283928 (Belakhoua 2025, EPIC 850K)",
+  "rows": [
+    {
+      "cohort": "Neou 2020",
+      "accession": "E-MTAB-7762",
+      "platform": "EPIC 850K",
+      "subgroup": "NFPT",
+      "n": 32,
+      "c0": 26,
+      "c0_pct": 81.2
+    },
+    {
+      "cohort": "GSE207937",
+      "accession": "GSE207937",
+      "platform": "EPIC 850K",
+      "subgroup": "NS (non-secreting = NFPT candidate)",
+      "n": 45,
+      "c0": 34,
+      "c0_pct": 75.6
+    },
+    {
+      "cohort": "M\u00f8ller 2025 (raw idat)",
+      "accession": "Mendeley vr2wb38r6t",
+      "platform": "EPIC 850K",
+      "subgroup": "all NF-PitNET",
+      "n": 117,
+      "c0": 101,
+      "c0_pct": 86.3
+    },
+    {
+      "cohort": "GSE115783",
+      "accession": "GSE115783",
+      "platform": "HM450 (cross-platform)",
+      "subgroup": "NFPA tumor",
+      "n": 34,
+      "c0": 32,
+      "c0_pct": 94.1
+    }
+  ],
+  "mean_c0_pct_all": 84.3,
+  "mean_c0_pct_EPIC_only": 81.0,
+  "cross_platform_HM450": {
+    "cohort": "GSE115783",
+    "platform": "Illumina HumanMethylation450",
+    "tumor_n": 34,
+    "tumor_c0": 32,
+    "tumor_c0_pct": 94.1,
+    "normal_n": 6,
+    "normal_c0": 2,
+    "normal_c0_pct": 33.33,
+    "note": "Healthy-pituitary controls map predominantly to c4 (4/6), only 33% to c0 -> confirms c0 is a TUMOR SF1-lineage identity, not a generic pituitary signature (specificity control)."
+  },
+  "note": "The cross-PLATFORM (HM450) confirmation via GSE115783 (34 NFPA) is now COMPLETE: 94.1% of independent NFPA tumors map to c0, replicating the EPIC-850K finding on a different array platform bridged by 333,574 common cg probes."
+}

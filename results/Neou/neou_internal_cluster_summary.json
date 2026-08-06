@@ -1,0 +1,105 @@
+{
+  "neou_n_samples": 86,
+  "neou_n_nfpt": 32,
+  "internal_n_probes": 86623,
+  "pca_pc1": 0.4562,
+  "pca_pc2": 0.0862,
+  "pca_cum20": 0.7698,
+  "best_k": 3,
+  "silhouette_by_k": {
+    "2": 0.4026,
+    "3": 0.4045,
+    "4": 0.3256,
+    "5": 0.3023,
+    "6": 0.2921
+  },
+  "cluster_characterization": {
+    "0": {
+      "n": 30,
+      "nfpt": 27,
+      "nfpt_frac": 0.9,
+      "moller_key_beta": 0.7027,
+      "lineage_score": -0.1203,
+      "cross_cohort_cluster_counts": {
+        "0": 28,
+        "2": 0,
+        "3": 2,
+        "4": 0
+      },
+      "stages": {
+        "CushingSubclinical": 2,
+        "Silent": 26,
+        "Gonadotrophin": 1,
+        "Hyperthyroidism": 1
+      },
+      "lineages": {
+        "TPIT": 6,
+        "SF1": 22,
+        "PIT1": 2
+      }
+    },
+    "1": {
+      "n": 15,
+      "nfpt": 1,
+      "nfpt_frac": 0.067,
+      "moller_key_beta": 0.6275,
+      "lineage_score": 0.0479,
+      "cross_cohort_cluster_counts": {
+        "0": 0,
+        "2": 0,
+        "3": 15,
+        "4": 0
+      },
+      "stages": {
+        "Silent": 1,
+        "CushingOvert": 11,
+        "CushingSubclinical": 3
+      },
+      "lineages": {
+        "TPIT": 15
+      }
+    },
+    "2": {
+      "n": 41,
+      "nfpt": 4,
+      "nfpt_frac": 0.098,
+      "moller_key_beta": 0.5338,
+      "lineage_score": -0.0347,
+      "cross_cohort_cluster_counts": {
+        "0": 0,
+        "2": 0,
+        "3": 0,
+        "4": 41
+      },
+      "stages": {
+        "MixedAcroHyperPRL": 3,
+        "Hyperthyroidism": 5,
+        "Silent": 4,
+        "Acromegaly": 19,
+        "Hyperperprolactinemia": 10
+      },
+      "lineages": {
+        "PIT1": 41
+      }
+    }
+  },
+  "internal_x_nfpt_contingency": {
+    "NFPT": {
+      "0": 27,
+      "1": 1,
+      "2": 4
+    },
+    "Functioning": {
+      "0": 3,
+      "1": 14,
+      "2": 37
+    }
+  },
+  "assoc_perm_p": null,
+  "cross_cohort_assignment_counts": {
+    "0": 28,
+    "2": 0,
+    "3": 17,
+    "4": 41
+  }
+}

@@ -1,0 +1,23 @@
+{
+  "k": 15,
+  "n_samples": 281,
+  "cohort_sizes": {
+    "GSE207937": 77,
+    "GSE283928": 118,
+    "Neou": 86
+  },
+  "observed_overall_mixing": 0.33,
+  "per_cohort_observed_mixing": {
+    "GSE207937": 0.4476,
+    "GSE283928": 0.2051,
+    "Neou": 0.3961
+  },
+  "size_weighted_random_expectation": 0.6549,
+  "perm_n": 5000,
+  "perm_null_mean": 0.6572,
+  "perm_null_sd": 0.0091,
+  "perm_null_2p5": 0.638,
+  "perm_null_97p5": 0.6735,
+  "p_value_one_sided_lower": 0.0001999600079984003,
+  "p_value_two_sided": 0.0001999600079984003
+}

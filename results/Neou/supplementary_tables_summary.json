@@ -1,0 +1,97 @@
+{
+  "st1_pc1_ratio": 0.2923,
+  "st1_pc2_ratio": 0.0967,
+  "st1_cum20": 0.6344,
+  "st2": [
+    {
+      "internal_cluster": "int0",
+      "n": 30,
+      "nfpt_n": 27,
+      "nfpt_pct": 90.0,
+      "mean_moller_key_beta": 0.7027,
+      "mean_lineage_score": -0.1203,
+      "dominant_lineage": "SF1",
+      "dominant_stage": "Silent",
+      "cross_cohort_centroid": "0 (SF1-lineage)",
+      "cross_cohort_counts": "c0=28, c3=2"
+    },
+    {
+      "internal_cluster": "int1",
+      "n": 15,
+      "nfpt_n": 1,
+      "nfpt_pct": 6.7,
+      "mean_moller_key_beta": 0.6275,
+      "mean_lineage_score": 0.0479,
+      "dominant_lineage": "TPIT",
+      "dominant_stage": "CushingOvert",
+      "cross_cohort_centroid": "3 (TPIT)",
+      "cross_cohort_counts": "c3=15"
+    },
+    {
+      "internal_cluster": "int2",
+      "n": 41,
+      "nfpt_n": 4,
+      "nfpt_pct": 9.8,
+      "mean_moller_key_beta": 0.5338,
+      "mean_lineage_score": -0.0347,
+      "dominant_lineage": "PIT1",
+      "dominant_stage": "Acromegaly",
+      "cross_cohort_centroid": "4 (PIT1)",
+      "cross_cohort_counts": "c4=41"
+    }
+  ],
+  "st3": [
+    {
+      "normalization": "preprocessRaw",
+      "n_samples": 86,
+      "c0": 28,
+      "c2": 0,
+      "c3": 17,
+      "c4": 41,
+      "c0_fraction": 0.3256,
+      "agreement_vs_preprocessRaw_pct": 100.0
+    },
+    {
+      "normalization": "noob",
+      "n_samples": 86,
+      "c0": 28,
+      "c2": 0,
+      "c3": 17,
+      "c4": 41,
+      "c0_fraction": 0.3256,
+      "agreement_vs_preprocessRaw_pct": 100.0
+    },
+    {
+      "normalization": "funnorm",
+      "n_samples": 86,
+      "c0": 29,
+      "c2": 0,
+      "c3": 16,
+      "c4": 41,
+      "c0_fraction": 0.3372,
+      "agreement_vs_preprocessRaw_pct": 98.8
+    },
+    {
+      "normalization": "quantile",
+      "n_samples": 86,
+      "c0": 27,
+      "c2": 0,
+      "c3": 18,
+      "c4": 41,
+      "c0_fraction": 0.314,
+      "agreement_vs_preprocessRaw_pct": 98.8
+    }
+  ],
+  "st3_reassigned": [
+    "P009",
+    "P082"
+  ],
+  "st2_best_k": 3,
+  "st2_silhouette_by_k": {
+    "2": 0.4026,
+    "3": 0.4045,
+    "4": 0.3256,
+    "5": 0.3023,
+    "6": 0.2921
+  }
+}

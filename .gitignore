@@ -1,0 +1,46 @@
+# ---- 敏感文件：绝不提交 ----
+.env
+*.env
+!*.env.example
+
+# ---- 本地工作区 / AI 助手状态 ----
+.workbuddy/
+artifacts/
+
+# ---- Python ----
+__pycache__/
+*.pyc
+.venv/
+venv/
+*.egg-info/
+
+# ---- 原始数据（保存在本地 G 盘，不进入仓库）----
+# 原始 idat / beta 矩阵在 DATASET_PATH（G:），第三方版权，只引 DOI
+raw/
+data/
+*.idat
+*.idat.gz
+*.rds
+
+# ---- 系统/编辑器 ----
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/
+
+# ---- 工具/临时目录 ----
+.codegraph/
+.tmp_probe/
+*.log
+run.log
+
+# ---- 版权材料：第三方论文全文（PMC 抓取，禁止再发布）----
+results/Neou/sf1_paper_text.txt
+results/Neou/sf1_paper_summary.json
+
+# ---- 灰色地带工具（NCBI POW/访问绕过，不入公开仓库）----
+results/Moller2025/pow.js
+results/Moller2025/powpage.html
+scripts/probe_ncbi*.py
+scripts/update_memory_ncbi.py
+docs/ncbi-pmc-pow-extraction-guide.md

@@ -1,0 +1,41 @@
+{
+  "cohort": "GSE115783",
+  "platform": "Illumina HumanMethylation450 (HM450)",
+  "tumor_type": "non-functioning pituitary adenoma (NFPA) + healthy pituitary control",
+  "centroid_source": "GSE283928 (Belakhoua 2025, EPIC 850K)",
+  "common_probes": 333574,
+  "reference_moller_c0_fraction": 0.86,
+  "n_total": 40,
+  "groups": {
+    "tumor": {
+      "n": 34,
+      "assignment_counts": {
+        "c0": 32,
+        "c2": 0,
+        "c3": 2,
+        "c4": 0
+      },
+      "c0_fraction": 0.9412
+    },
+    "normal": {
+      "n": 6,
+      "assignment_counts": {
+        "c0": 2,
+        "c2": 0,
+        "c3": 0,
+        "c4": 4
+      },
+      "c0_fraction": 0.3333
+    }
+  },
+  "overall": {
+    "n": 40,
+    "assignment_counts": {
+      "c0": 34,
+      "c2": 0,
+      "c3": 2,
+      "c4": 4
+    },
+    "c0_fraction": 0.85
+  }
+}

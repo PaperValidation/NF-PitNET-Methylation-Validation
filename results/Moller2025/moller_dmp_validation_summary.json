@@ -1,0 +1,62 @@
+{
+  "n_dmp": 562,
+  "memberships": {
+    "k5": 118,
+    "k1": 108,
+    "k2": 124,
+    "k3": 102,
+    "k4": 110
+  },
+  "trend": {
+    "Hypermethylated": 282,
+    "Hypomethylated": 280
+  },
+  "present_union": 562,
+  "present_all3": 470,
+  "cohorts": {
+    "Neou": {
+      "n_samples": 86,
+      "n_high_risk": 30,
+      "n_low_risk": 56,
+      "n_dmp_present": 562,
+      "frac_correct_direction": 0.5249110320284698,
+      "binom_p_all": 0.12735656052019864,
+      "n_correct_all": 295,
+      "n_dmp_present_k4": 110,
+      "frac_correct_k4": 0.5272727272727272,
+      "binom_p_k4": 0.3168778240095792,
+      "n_correct_k4": 58,
+      "signature_auc": 0.555952380952381
+    },
+    "GSE283928": {
+      "n_samples": 116,
+      "n_high_risk": 70,
+      "n_low_risk": 46,
+      "n_dmp_present": 470,
+      "frac_correct_direction": 0.6212765957446809,
+      "binom_p_all": 8.16015012507161e-08,
+      "n_correct_all": 292,
+      "n_dmp_present_k4": 99,
+      "frac_correct_k4": 0.0,
+      "binom_p_k4": 1.0,
+      "n_correct_k4": 0,
+      "signature_auc": 0.4984472049689441
+    },
+    "GSE207937": {
+      "n_samples": 77,
+      "n_high_risk": 45,
+      "n_low_risk": 32,
+      "n_dmp_present": 557,
+      "frac_correct_direction": 0.5655296229802513,
+      "binom_p_all": 0.0011269843163222598,
+      "n_correct_all": 315,
+      "n_dmp_present_k4": 110,
+      "frac_correct_k4": 0.0,
+      "binom_p_k4": 1.0,
+      "n_correct_k4": 0,
+      "signature_auc": 0.35138888888888886
+    }
+  },
+  "meta_n_sig_p05": 0,
+  "meta_n_sig_direction_correct": 0
+}

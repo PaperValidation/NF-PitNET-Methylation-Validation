@@ -1,0 +1,66 @@
+{
+  "n_patients": 111,
+  "n_events": 28,
+  "event_rate_pct": 25.2,
+  "per_k": [
+    {
+      "Kcluster_5": "k1",
+      "n": 18,
+      "events": 4,
+      "median_fu": 7.0,
+      "median_regrow": 21.2161203288,
+      "event_rate_%": 22.2
+    },
+    {
+      "Kcluster_5": "k2",
+      "n": 30,
+      "events": 4,
+      "median_fu": 6.0,
+      "median_regrow": 20.6020725061,
+      "event_rate_%": 13.3
+    },
+    {
+      "Kcluster_5": "k3",
+      "n": 26,
+      "events": 8,
+      "median_fu": 5.0,
+      "median_regrow": 59.1416388267,
+      "event_rate_%": 30.8
+    },
+    {
+      "Kcluster_5": "k4",
+      "n": 19,
+      "events": 7,
+      "median_fu": 5.0,
+      "median_regrow": 55.905511811,
+      "event_rate_%": 36.8
+    },
+    {
+      "Kcluster_5": "k5",
+      "n": 18,
+      "events": 5,
+      "median_fu": 6.0,
+      "median_regrow": 74.0936221493,
+      "event_rate_%": 27.8
+    }
+  ],
+  "high_vs_low": {
+    "logrank_p": 0.06517720295672116,
+    "cox_hr": 2.1389658890480474,
+    "ci95": [
+      0.9356353240726069,
+      4.889912722187969
+    ],
+    "cox_p": 0.07150404320115784
+  },
+  "k4_vs_rest": {
+    "logrank_p": 0.1807612354283212,
+    "cox_hr": 1.8193601061912437,
+    "ci95": [
+      0.7566309003434033,
+      4.374750217705766
+    ],
+    "cox_p": 0.18123293821829373
+  },
+  "regrow_pct_kruskal_p": 0.008486393849912292
+}
