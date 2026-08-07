@@ -10,16 +10,18 @@ NF-PitNETs reproducibly map to the GSE283928 tumor cluster 0 (c0, an SF1-lineage
 
 ## Data sources
 
-All raw data are third-party and publicly available; no raw data are redistributed here (see [Data Availability](docs/manuscript-v1.md) for accession numbers):
+All raw data are third-party and publicly available; **no raw data are redistributed here** (only processed results and code). See [Data Availability](docs/manuscript-v1.md) for the full statement:
 
-| Cohort | Source | Accession |
-|---|---|---|
-| Neou 2020 | ArrayExpress/BioStudies | E-MTAB-7762 |
-| GSE283928 | GEO (Belakhoua et al., 2025) | GSE283928 |
-| GSE207937 | GEO (Silva-Junior et al., 2023) | GSE207937 |
-| GSE115783 | GEO (Kober/Bujko et al., 2018/2019) | GSE115783 |
-| Moller 2025 idat | Mendeley Data | DOI 10.17632/vr2wb38r6t.1 |
-| GSE209903 (transcriptome) | GEO | GSE209903 |
+| Cohort | Platform | N (composition) | Source | Accession |
+|---|---|---|---|---|
+| Neou 2020 | EPIC-850K | 86 (32 NF-PitNET; 54 functioning) | ArrayExpress/BioStudies | E-MTAB-7762 |
+| GSE283928 | EPIC-850K | 118 (4 tumor clusters: c0 n=70, c2 n=2, c3 n=22, c4 n=24) | GEO (Belakhoua et al., 2025) | GSE283928 |
+| GSE207937 | EPIC-850K | 77 (45 NS/NF-PitNET; 32 functioning) | GEO (Silva-Junior et al., 2023) | GSE207937 |
+| GSE115783 | HM450 | 40 (34 NFPA tumors; 6 healthy-pituitary controls) | GEO (Kober/Bujko et al., 2018/2019) | GSE115783 |
+| Moller 2025 idat | EPIC-850K | 117 (silent gonadotroph NF-PitNET, k1-k5, longitudinal regrowth follow-up) | Mendeley Data | DOI 10.17632/vr2wb38r6t.1 |
+| GSE209903 | RNA (transcriptome) | differential expression (NF-PitNET vs functioning) | GEO (Silva-Junior et al., 2023) | GSE209903 |
+
+**Roles:** GSE283928 supplies the reference tumor clusters (c0/c2/c3/c4) used as nearest-centroid targets; Neou and GSE207937 are independent EPIC-850K validation cohorts; GSE115783 is the cross-platform (HM450) external validation cohort with embedded healthy-pituitary controls; the Moller-2025 raw idat are used for the fully de novo, k-label-free lineage projection and the direct prognostic test; GSE209903 provides the transcriptomic concordance check.
 
 ## Repository layout
 
@@ -45,6 +47,14 @@ experience-archive/  Documented analysis pitfalls and reusable workflows
 - `results/Moller2025/prognostic_validation/` — Cox regrowth models (HR 2.14 / adjusted 2.09)
 - `results/Neou/supplementary_table1-3_*.csv` — supplementary tables
 - `results/Moller2025/figure4_merged.png` — merged multi-panel figure
+
+## AI disclosure
+
+AI-assisted tools (WorkBuddy with large language models) were used as productivity aids for: (i) writing and debugging the analysis scripts in `scripts/`; (ii) drafting and copyediting the manuscript and supplementary materials; and (iii) literature and data-source verification. All scientific content, data interpretation, statistical analyses, and conclusions were generated, reviewed, and validated by the authors. The AI tools did not make independent scientific judgments, and all code and results are publicly available for independent verification. This statement mirrors the manuscript's AI Disclosure Statement (see `docs/manuscript-v1.md`).
+
+## Ethics
+
+This is a secondary analysis of publicly available, de-identified genomic datasets obtained from GEO, ArrayExpress/BioStudies, and Mendeley Data. No new human-subjects data were generated; the original studies obtained ethical approval and informed consent as described in their respective publications. No additional ethics approval was required for this in-silico reanalysis.
 
 ## License
 
