@@ -44,3 +44,6 @@ results/Moller2025/powpage.html
 scripts/probe_ncbi*.py
 scripts/update_memory_ncbi.py
 docs/ncbi-pmc-pow-extraction-guide.md
+
+# 一次性运维脚本（Zenodo 上传辅助，含硬编码 bucket ID，不入库）
+scripts/_zenodo_upload.py
