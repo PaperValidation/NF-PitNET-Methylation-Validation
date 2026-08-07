@@ -240,24 +240,24 @@ An NF-PitNET-associated, high-methylation tumor cluster is independently reprodu
 
 ## 6. References
 
-1. Ostrom QT, et al. CBTRUS statistical report. *Neuro-Oncology*. 2023.
-2. Ntali G, Grossman A. Clinical review: non-functioning pituitary adenomas. *Pituitary*. 2014.
-3. Capper D, et al. DNA methylation-based classification of CNS tumors. *Nature*. 2018.
-4. Sievers P, et al. DNA methylation-based classification of pituitary neuroendocrine tumors. *Acta Neuropathol*. 2020.
-5. Mosella MS, Sabedot TS, Silva TC, et al. DNA methylation-based signatures classify sporadic pituitary tumors according to clinicopathological features. *Neuro-Oncology*. 2021;23(3):441-453. (PMID 33631002)
-6. Moller AH, et al. DNA methylation profiling predicts postsurgical regrowth in SF1-lineage nonfunctioning pituitary neuroendocrine tumors. *Neuro-Oncology*. 2025. (PMID 41369112)
+1. Ostrom QT, et al. CBTRUS Statistical Report: Primary Brain and Other Central Nervous System Tumors Diagnosed in the United States in 2016-2020. *Neuro-Oncology*. 2023;25(12 Suppl 2):iv1-iv99. (PMID 37793125)
+2. [VERIFY — citation not found in PubMed/Crossref; replace with the intended NFPA clinical review] Ntali G, Grossman A. Clinical review: non-functioning pituitary adenomas. *Pituitary*. 2014.
+3. Capper D, et al. DNA methylation-based classification of central nervous system tumours. *Nature*. 2018;555(7697):469-474. (PMID 29539639)
+4. [VERIFY — citation not found in PubMed/Crossref; if referring to the general CNS methylation classifier see ref 3, otherwise replace with the correct PitNET methylation classification source] Sievers P, et al. DNA methylation-based classification of pituitary neuroendocrine tumors. *Acta Neuropathol*. 2020.
+5. Mosella MS, Sabedot TS, Silva TC, et al. DNA methylation-based signatures classify sporadic pituitary tumors according to clinicopathological features. *Neuro-Oncology*. 2021;23(8):1292-1303. (PMID 33631002)
+6. Møller MW, et al. DNA methylation profiling predicts postsurgical regrowth in SF1-lineage nonfunctioning pituitary neuroendocrine tumors. *Neuro-Oncology*. 2025;28(3):728-740. (PMID 41369112)
 7. Belakhoua S, Vasudevaraja V, Schroff C, Galbraith K, Movahed-Ezazi M, Serrano J, Yang Y, Orringer D, Golfinos JG, Sen C, Pacione D, Agrawal N, Snuderl M. DNA methylation profiling of pituitary neuroendocrine tumors identifies distinct clinical and pathological subtypes based on epigenetic differentiation. *Neuro-Oncol*. 2025;27(9):2341-2354. (PMID 40295206)
-8. Silva-Junior HM, et al. Integrated methylome and transcriptome of PitNETs. *Clin Epigenetics*. 2023. (GSE207937 / GSE209903)
-9. Neou M, et al. Pangenomic Classification of Pituitary Neuroendocrine Tumors. *Cancer Cell*. 2020. (Neou 2020 / E-MTAB-7762; PMID 31883967)
-10. Kober P, et al. DNA methylation profiling in nonfunctioning pituitary adenomas. *Mol Cell Endocrinol*. 2018. (GSE115783; PMID 29410024)
-11. Kober P, et al. The Role of Aberrant DNA Methylation in Misregulation of Gene Expression in Gonadotroph Nonfunctioning Pituitary Tumors. *Cancers (Basel)*. 2019. (GSE115783 follow-up; PMID 31731486)
-12. Subramanian A, et al. A next generation connectivity map. *Cell*. 2017. (LINCS)
-13. Chen EY, et al. Enrichr. *BMC Bioinformatics*. 2013.
-14. Cheng Y, et al. Therapeutic potential of targeting Nrf2 by panobinostat in pituitary neuroendocrine tumors. *Acta Neuropathol Commun*. 2024. (HDAC/panobinostat in PitNET; PMID 38637883)
-15. Lin AL, et al. The treatment of aggressive prolactinomas with everolimus. *Pituitary*. 2023. (mTOR/everolimus in PitNET; PMID 37428396)
-16. Shi L, et al. BRD4 as a therapeutic target for nonfunctioning and growth hormone pituitary adenoma. *Neuro-Oncol*. 2020. (BET/BRD4 in NFPA; PMID 32246150)
-17. Zhang D, et al. Targeting the ERK pathway for the treatment of Cushing's disease. *Oncotarget*. 2016. (MEK, corticotroph-only; PMID 27708250)
-18. Anderson E, et al. Regression of a nonfunctioning pituitary macroadenoma on the CDK4/6 inhibitor palbociclib: case report. *Neurosurg Focus*. 2018. (CDK4/6, single NFPA case; PMID 29852762)
+8. Silva-Júnior RMP, Bueno AC, Martins CS, et al. Integrating Methylome and Transcriptome Signatures Expands the Molecular Classification of Pituitary Neuroendocrine Tumors. *J Clin Endocrinol Metab*. 2023;108(6):1452-1463. (PMID 36504388; GSE207937 / GSE209903)
+9. Neou M, et al. Pangenomic Classification of Pituitary Neuroendocrine Tumors. *Cancer Cell*. 2020;37(1):123-134.e5. (PMID 31883967; E-MTAB-7762)
+10. Kober P, et al. DNA methylation profiling in nonfunctioning pituitary adenomas. *Mol Cell Endocrinol*. 2018;473:194-204. (PMID 29410024; GSE115783)
+11. Kober P, et al. The Role of Aberrant DNA Methylation in Misregulation of Gene Expression in Gonadotroph Nonfunctioning Pituitary Tumors. *Cancers (Basel)*. 2019;11(11):1650. (PMID 31731486; GSE115783 follow-up)
+12. Subramanian A, et al. A Next Generation Connectivity Map: L1000 Platform and the First 1,000,000 Profiles. *Cell*. 2017;171(6):1437-1452. (PMID 29195078; LINCS)
+13. Chen EY, et al. Enrichr: interactive and collaborative HTML5 gene list enrichment analysis tool. *BMC Bioinformatics*. 2013;14:128. (PMID 23586463)
+14. Cheng Y, et al. Therapeutic potential of targeting Nrf2 by panobinostat in pituitary neuroendocrine tumors. *Acta Neuropathol Commun*. 2024;12(1):61. (PMID 38637883; HDAC/panobinostat in PitNET)
+15. Lin AL, et al. The treatment of aggressive prolactinomas with everolimus. *Pituitary*. 2023;26(4):474-481. (PMID 37428396; mTOR/everolimus in PitNET)
+16. Shi C, et al. BRD4 as a therapeutic target for nonfunctioning and growth hormone pituitary adenoma. *Neuro-Oncol*. 2020;22(8):1114-1125. (PMID 32246150; BET/BRD4 in NFPA)
+17. Zhang D, et al. Targeting the ERK pathway for the treatment of Cushing's disease. *Oncotarget*. 2016;7(43):69149-69158. (PMID 27708250; MEK, corticotroph-only)
+18. Anderson E, et al. Regression of a nonfunctioning pituitary macroadenoma on the CDK4/6 inhibitor palbociclib: case report. *Neurosurg Focus*. 2018;44(6):E9. (PMID 29852762; CDK4/6, single NFPA case)
 
 ---
 
