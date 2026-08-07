@@ -140,7 +140,7 @@ Using Enrichr (LINCS L1000 2021 and L1000 co-expression modules) (12,13), we que
 
 ### 2.9 Code and data availability
 
-All scripts, processed matrices, and summary outputs are deposited in the project repository and will be released under a persistent identifier (DOI) upon publication [AUTHOR_ACTION: public repository URL/DOI to be inserted at submission; project is not yet on a public hosting service]. Raw data are available via GEO (GSE283928, GSE207937, GSE209903, GSE115783) and ArrayExpress/BioStudies (E-MTAB-7762). A complete list of software versions and random seeds is provided in **Supplementary Methods**.
+All scripts, processed matrices, and summary outputs are deposited in the project repository (https://github.com/tiduslrg/NF-PitNET-Methylation-Validation) and archived under the Zenodo DOI 10.5281/zenodo.21840024 (currently restricted; will be made public upon acceptance). Raw data are available via GEO (GSE283928, GSE207937, GSE209903, GSE115783) and ArrayExpress/BioStudies (E-MTAB-7762). A complete list of software versions and random seeds is provided in **Supplementary Methods**.
 
 ---
 
@@ -363,7 +363,7 @@ The c0 assignment is highly stable across normalization: >=98.8% of samples reta
 
 ## Data Availability Statement
 
-All raw and processed methylation data analyzed in this study are publicly available. EPIC-850K datasets were obtained from the Gene Expression Omnibus (GEO): GSE283928 (Belakhoua et al., 2025), GSE207937 (Silva-Junior et al., 2023), and GSE115783 (Kober/Bujko et al., 2018/2019); and from ArrayExpress/BioStudies: E-MTAB-7762 (Neou et al., 2020). Moller et al.'s raw EPIC 850K idat files were obtained from Mendeley Data (DOI 10.17632/vr2wb38r6t.1). Transcriptomic data were obtained from GSE209903. All custom analysis scripts, processed beta matrices, centroid files, permutation test outputs, and summary statistics will be deposited in a public repository and released under a persistent DOI upon publication [AUTHOR_ACTION: repository URL/DOI to be inserted at submission]. Software versions and random seeds are documented in Supplementary Methods.
+All raw and processed methylation data analyzed in this study are publicly available. EPIC-850K datasets were obtained from the Gene Expression Omnibus (GEO): GSE283928 (Belakhoua et al., 2025), GSE207937 (Silva-Junior et al., 2023), and GSE115783 (Kober/Bujko et al., 2018/2019); and from ArrayExpress/BioStudies: E-MTAB-7762 (Neou et al., 2020). Moller et al.'s raw EPIC 850K idat files were obtained from Mendeley Data (DOI 10.17632/vr2wb38r6t.1). Transcriptomic data were obtained from GSE209903. All custom analysis scripts, processed beta matrices, centroid files, permutation test outputs, and summary statistics are available in the project repository (https://github.com/tiduslrg/NF-PitNET-Methylation-Validation) and archived under the Zenodo DOI 10.5281/zenodo.21840024 (currently restricted; will be made public upon acceptance). Software versions and random seeds are documented in Supplementary Methods.
 
 ## Ethics Declaration
 
