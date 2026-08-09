@@ -11,7 +11,7 @@
 
 ## Running title
 
-Methylation taxonomy of NF-PitNET across independent cohorts
+NF-PitNET methylation taxonomy across cohorts
 
 ## Authors
 
@@ -21,11 +21,13 @@ Methylation taxonomy of NF-PitNET across independent cohorts
 
 [AUTHOR_ACTION: corresponding author to be designated before submission]
 
+*Total manuscript word count: ~7,000 words (including abstract, text, references, and figure legends).*
+
 ---
 
 ## Abstract
 
-**Background.** The methylation taxonomy of Moller et al. (2025) stratified NF-PitNETs into five risk clusters, but its generalizability to independent cohorts and its relationship to functioning tumors are incompletely defined, and the highest-risk cluster (k4) is sometimes conflated with "aggressive NF-PitNET."
+**Background.** The methylation taxonomy of Moller et al. (2025) stratified NF-PitNETs into five risk clusters, but its generalizability to independent cohorts and its relationship to functioning tumors are incompletely defined, and the highest-risk cluster (k4) is sometimes conflated with "aggressive NF-PitNET." The aim of this study was to determine whether NF-PitNETs correspond to Moller's highest-risk k4 cluster or instead represent a distinct, generalizable methylation lineage across independent cohorts and microarray platforms.
 
 **Methods.** We independently reanalyzed three EPIC-850K datasets (GSE283928, GSE207937, Neou) and one HM450 cohort (GSE115783) via joint PCA, nearest-centroid projection, and Moller's 562 published DMPs, plus from-scratch clustering and a direct prognostic test in Moller's 117-NF-PitNET cohort.
 
@@ -33,7 +35,15 @@ Methylation taxonomy of NF-PitNET across independent cohorts
 
 **Conclusion.** NF-PitNETs are an SF1-lineage methylation entity dissociated from the highest-risk k4 state; their prognostic risk lies in a within-lineage subdivision that is independently recoverable from public data.
 
-**Keywords**: pituitary neuroendocrine tumor; NF-PitNET; DNA methylation; EPIC 850K; HM450; Moller 2025; cross-cohort validation; SF1 lineage
+**Keywords**: non-functioning pituitary neuroendocrine tumor; DNA methylation; EPIC 850K; cross-cohort validation; SF1 lineage
+
+**Key Points**
+- NF-PitNETs are an SF1-lineage methylation entity, not Moller's highest-risk k4.
+- Lineage identity maps to GSE283928 c0 across 4 cohorts and 2 platforms.
+- Within-lineage k-subdivision, not the coarse centroid, carries regrowth risk.
+
+**Importance of the Study**
+NF-PitNETs are the most common clinically silent pituitary tumors, yet their biological classification and post-surgical regrowth risk remain poorly predicted by histopathology. Moller et al. (2025) recently proposed a five-cluster methylation taxonomy with a highest-risk k4 group, but whether this taxonomy generalizes to independent data and how it relates to functioning tumors were unknown. We provide the first independent, cross-cohort and cross-platform validation of this taxonomy, showing that NF-PitNETs constitute an SF1-lineage methylation entity distinct from the secretory k4 state. By clarifying that regrowth risk resides in a within-lineage subdivision rather than in NF-PitNET status per se, this work reframes risk stratification and nominates lineage-aware epigenetic targets (HDAC, mTOR, BET) for future preclinical validation.
 
 ---
 
@@ -415,7 +425,7 @@ During the preparation of this work, the authors used AI-assisted tools (WorkBud
 | Target Word Count | 5,000 words |
 | Deviation | +23% (acceptable for Neuro-Oncology original research articles) |
 | Sections Completed | 5/5 (Introduction, Methods, Results, Discussion, Conclusion) |
-| Citations Used | 18 |
+| Citations Used | 16 |
 | Abstract Word Count | ~177 words (target: <=250) |
 | Revision Round | 1 (nature-reviewer assessment 2026-08-06: wording moderation, precision, submission readiness) |
 
