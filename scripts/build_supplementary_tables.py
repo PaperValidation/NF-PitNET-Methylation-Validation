@@ -13,9 +13,7 @@ import numpy as np
 
 NE = "C:/Users/tidus/PycharmProjects/Neurosurgery-NF-PitNET"
 OUT = os.path.join(NE, "results", "Neou")
-G = "G:/CMCC Sync/Medical Data/Neurosurgery/NF-PITNET"
-
-# ---------------------------------------------------------------------------
+from _paths import DATASET_PATH as G
 # ST1 : Joint PCA cohort centroids + explained variance
 # ---------------------------------------------------------------------------
 pc = list(csv.DictReader(open(os.path.join(OUT, "joint_pca_coords.csv"))))

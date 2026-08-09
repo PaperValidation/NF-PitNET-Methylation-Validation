@@ -1,11 +1,12 @@
 #!/usr/bin/env Rscript
+source("C:/Users/tidus/PycharmProjects/Neurosurgery-NF-PitNET/scripts/paths.R")
 # Build a unified master sample metadata table across downloaded GEO cohorts,
 # filtering to non-functioning pituitary neuroendocrine tumors (NFPT/NFPA)
 # where applicable, and standardizing phenotype columns.
 suppressMessages({
   library(dplyr); library(stringr); library(readr)
 })
-BASE <- "/mnt/g/CMCC Sync/Medical Data/Neurosurgery/NF-PitNET"
+BASE <- paths$DATASET_PATH_WSL
 SAMP <- file.path(BASE, "samples")
 OUT  <- file.path(BASE, "metadata")
 dir.create(OUT, showWarnings = FALSE, recursive = TRUE)

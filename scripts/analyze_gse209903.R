@@ -1,8 +1,9 @@
 #!/usr/bin/env Rscript
+source("C:/Users/tidus/PycharmProjects/Neurosurgery-NF-PitNET/scripts/paths.R")
 # GSE209903: FPT vs NFPT precomputed DESeq2 results (Silva-Junior 2023 paired RNA-seq)
 # Extract significant DE genes, annotate ENSG->symbol, cross-check vs Moller 5-cluster key genes.
 suppressMessages({ library(data.table); library(dplyr); library(ggplot2) })
-BASE <- "/mnt/g/CMCC Sync/Medical Data/Neurosurgery/NF-PitNET"
+BASE <- paths$DATASET_PATH_WSL
 DE   <- file.path(BASE, "GSE209903_FPT_vs_NFPT.txt.gz")
 OUT  <- file.path(BASE, "results", "GSE209903")
 dir.create(OUT, showWarnings = FALSE, recursive = TRUE)

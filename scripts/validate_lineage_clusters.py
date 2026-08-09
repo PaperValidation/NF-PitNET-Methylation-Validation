@@ -2,7 +2,7 @@ import gzip, csv, json, os
 import numpy as np
 import pandas as pd
 
-BASE = "G:/CMCC Sync/Medical Data/Neurosurgery/NF-PitNET"
+from _paths import DATASET_PATH as BASE
 MATP = os.path.join(BASE, "GSE283928_MatrixProcessed_Normalized.txt.gz")
 MK   = os.path.join(BASE, "results/GSE283928/lineage_marker_probes.csv")
 CL   = os.path.join(BASE, "results/GSE283928/cluster_assignment_k5.csv")

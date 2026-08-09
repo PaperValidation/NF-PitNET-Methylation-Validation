@@ -7,7 +7,7 @@ Memory: use float32, read in chunks to stay under ~4GB.
 """
 import gzip, numpy as np, csv, os, json, time
 
-BASE = "G:/CMCC Sync/Medical Data/Neurosurgery/NF-PitNET"
+from _paths import DATASET_PATH as BASE
 MAT  = os.path.join(BASE, "GSE283928_MatrixProcessed_Normalized.txt.gz")
 OUT  = os.path.join(BASE, "results", "GSE283928")
 os.makedirs(OUT, exist_ok=True)

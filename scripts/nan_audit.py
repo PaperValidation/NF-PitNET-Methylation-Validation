@@ -2,7 +2,7 @@
 """Quick NaN audit for Neou beta matrix."""
 import numpy as np, os
 
-BASE = "G:/CMCC Sync/Medical Data/Neurosurgery/NF-PitNET"
+from _paths import DATASET_PATH as BASE
 NEU_BIN = os.path.join(BASE, "E-MTAB-7762", "beta_out", "neou_beta_full.bin")
 
 with open(NEU_BIN, "rb") as f:

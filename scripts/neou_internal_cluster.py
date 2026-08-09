@@ -23,7 +23,7 @@ from sklearn.decomposition import PCA
 from sklearn.cluster import KMeans
 from sklearn.metrics import silhouette_score
 
-BASE = "G:/CMCC Sync/Medical Data/Neurosurgery/NF-PitNET"
+from _paths import DATASET_PATH as BASE
 NE = "C:/Users/tidus/PycharmProjects/Neurosurgery-NF-PitNET"
 MAT_283 = os.path.join(BASE, "GSE283928_MatrixProcessed_Normalized.txt.gz")
 MAT_207 = os.path.join(BASE, "GSE207937_series_matrix.txt.gz")

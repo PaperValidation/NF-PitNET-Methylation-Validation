@@ -4,7 +4,7 @@ import matplotlib.pyplot as plt
 import numpy as np
 import os, json
 
-BASE = "G:/CMCC Sync/Medical Data/Neurosurgery/NF-PitNET"
+from _paths import DATASET_PATH as BASE
 OUT = os.path.join(BASE, "results", "overview_figure.png")
 os.makedirs(os.path.dirname(OUT), exist_ok=True)
 

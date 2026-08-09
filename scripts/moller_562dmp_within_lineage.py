@@ -28,7 +28,7 @@ BASE = r"C:/Users/tidus/PycharmProjects/Neurosurgery-NF-PitNET"
 RES = os.path.join(BASE, "results/Moller2025/within_lineage_562dmp")
 os.makedirs(RES, exist_ok=True)
 
-BETA_GZ = r"G:/CMCC Sync/Medical Data/Neurosurgery/NF-PITNET/Mendeley_Moller2025/mendeley_beta_cg.csv.gz"
+BETA_GZ = r"G:/CMCC Sync/Medical Data/Neurosurgery/NF-PitNET/Mendeley_Moller2025/mendeley_beta_cg.csv.gz"
 DMP_CSV = os.path.join(BASE, "results/Moller2025/moller_dmp_probe_validation.csv")
 ASSIGN_CSV = os.path.join(BASE, "results/Moller2025/strict_projection/moller_strict_assignment.csv")
 

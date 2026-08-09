@@ -1,10 +1,11 @@
+source("C:/Users/tidus/PycharmProjects/Neurosurgery-NF-PitNET/scripts/paths.R")
 suppressMessages({
   library(data.table, quietly = TRUE)
   library(glmnet, quietly = TRUE)
   library(pROC, quietly = TRUE)
 })
 
-BASE <- "/mnt/g/CMCC Sync/Medical Data/Neurosurgery/NF-PitNET"
+BASE <- paths$DATASET_PATH_WSL
 RES  <- file.path(BASE, "results", "GSE209903")
 OUT  <- file.path(BASE, "results", "risk_model")
 dir.create(OUT, showWarnings = FALSE, recursive = TRUE)

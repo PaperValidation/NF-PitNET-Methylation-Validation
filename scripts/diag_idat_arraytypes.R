@@ -3,7 +3,7 @@
 suppressMessages(library(illuminaio))
 suppressMessages(library(minfi))
 
-BASE <- "/mnt/g/CMCC Sync/Medical Data/Neurosurgery/NF-PITNET/Mendeley_Moller2025"
+BASE <- "/mnt/g/CMCC Sync/Medical Data/Neurosurgery/NF-PitNET/Mendeley_Moller2025"
 SS   <- file.path(BASE, "SampleSheet.xlsx")
 
 # 1) read SampleSheet (first sheet)

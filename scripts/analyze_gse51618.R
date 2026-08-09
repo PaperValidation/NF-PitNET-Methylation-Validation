@@ -1,10 +1,11 @@
 #!/usr/bin/env Rscript
+source("C:/Users/tidus/PycharmProjects/Neurosurgery-NF-PitNET/scripts/paths.R")
 # GSE51618: differential expression invasive vs non-invasive NFPA (microarray)
 # Output: top DE genes, volcano-ready table, basic GO/KEGG via fgsea (if gene sets available)
 suppressMessages({
   library(limma); library(data.table); library(dplyr); library(ggplot2)
 })
-BASE <- "/mnt/g/CMCC Sync/Medical Data/Neurosurgery/NF-PitNET"
+BASE <- paths$DATASET_PATH_WSL
 MAT  <- file.path(BASE, "GSE51618_series_matrix.txt.gz")
 OUT  <- file.path(BASE, "results", "GSE51618")
 dir.create(OUT, showWarnings = FALSE, recursive = TRUE)

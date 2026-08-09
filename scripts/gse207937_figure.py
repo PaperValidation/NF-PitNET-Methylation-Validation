@@ -7,7 +7,7 @@ matplotlib.use("Agg")
 import matplotlib.pyplot as plt
 from sklearn.decomposition import PCA
 
-BASE = "G:/CMCC Sync/Medical Data/Neurosurgery/NF-PitNET"
+from _paths import DATASET_PATH as BASE
 MAT = os.path.join(BASE, "GSE207937_series_matrix.txt.gz")
 OUT = "C:/Users/tidus/PycharmProjects/Neurosurgery-NF-PitNET/results/GSE207937"
 

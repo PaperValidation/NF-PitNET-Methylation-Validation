@@ -24,7 +24,7 @@ matplotlib.use("Agg")
 import matplotlib.pyplot as plt
 
 BASE = "C:/Users/tidus/PycharmProjects/Neurosurgery-NF-PitNET"
-CENT = "G:/CMCC Sync/Medical Data/Neurosurgery/NF-PITNET/Moller2025_derived/gse283928_centroids.npz"
+CENT = "G:/CMCC Sync/Medical Data/Neurosurgery/NF-PitNET/Moller2025_derived/gse283928_centroids.npz"
 GSE  = "G:/CMCC Sync/Medical Data/Neurosurgery/NF-PitNET/GSE115783/GSE115783_series_matrix.txt.gz"
 OUTD = os.path.join(BASE, "results/Moller2025/gse115783_validation")
 os.makedirs(OUTD, exist_ok=True)

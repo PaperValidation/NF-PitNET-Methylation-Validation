@@ -10,7 +10,7 @@ import os, json, gzip, csv, time, math
 import numpy as np
 from collections import Counter
 
-BASE = "G:/CMCC Sync/Medical Data/Neurosurgery/NF-PitNET"
+from _paths import DATASET_PATH as BASE
 PROJ = "C:/Users/tidus/PycharmProjects/Neurosurgery-NF-PitNET"
 OUT = os.path.join(PROJ, "results", "Moller2025")
 os.makedirs(OUT, exist_ok=True)

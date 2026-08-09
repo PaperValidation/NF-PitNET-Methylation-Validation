@@ -15,7 +15,7 @@ APPROACH:
 import gzip, csv, json, time, os
 import numpy as np
 
-BASE = "G:/CMCC Sync/Medical Data/Neurosurgery/NF-PitNET"
+from _paths import DATASET_PATH as BASE
 NE = "C:/Users/tidus/PycharmProjects/Neurosurgery-NF-PitNET"
 MAT_283 = os.path.join(BASE, "GSE283928_MatrixProcessed_Normalized.txt.gz")
 CLUST_283 = os.path.join(BASE, "results", "GSE283928", "cluster_assignment_k5.csv")

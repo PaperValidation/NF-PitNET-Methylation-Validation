@@ -15,7 +15,7 @@ from sklearn.cluster import KMeans
 from sklearn.decomposition import PCA
 from sklearn.metrics import silhouette_score
 
-BASE = "G:/CMCC Sync/Medical Data/Neurosurgery/NF-PitNET"
+from _paths import DATASET_PATH as BASE
 MAT_207937 = os.path.join(BASE, "GSE207937_series_matrix.txt.gz")
 SAMPLES_207937 = os.path.join(BASE, "samples", "GSE207937_samples.csv")
 MAT_283928 = os.path.join(BASE, "GSE283928_MatrixProcessed_Normalized.txt.gz")
