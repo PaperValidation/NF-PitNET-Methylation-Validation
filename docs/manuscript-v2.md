@@ -1,7 +1,7 @@
 # Manuscript V2 (submission-ready final draft)
 
 > **Generated**: 2026-08-07 via ARS-Codex `academic-paper` full mode.
-> **Based on**: manuscript-v1.md with all nature-reviewer (10-point) + committee (7-point) revisions, final-review fixes (14 items), and archive integration (GitHub + Zenodo DOI).
+> **Based on**: the ARS first draft (v1, archived in git history) with all nature-reviewer (10-point) + committee (7-point) revisions, final-review fixes (14 items), and archive integration (GitHub + Zenodo DOI).
 > **Target journal**: *Neuro-Oncology*. Vancouver citations. Figures 1-5 + Supplementary Figure S3; Tables 1-3; Supplementary Tables 1-3; Supplementary Methods.
 
 ---

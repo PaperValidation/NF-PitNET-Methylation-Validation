@@ -57,7 +57,7 @@
   - int1 (n=15): 6.7% NFPT, 全 TPIT Cushing, → c3: 15/15
   - int2 (n=41): 9.8% NFPT, 全 PIT1 分泌型, → c4: 41/41
   - **证明**：甲基化分型是数据驱动的，非 GSE283928 质心训练出来的伪影
-- **Manuscript 初稿**：`docs/manuscript-draft.md`，目标 *Neuro-Oncology*
+- **Manuscript 终稿**：`docs/manuscript-v2.md`，目标 *Neuro-Oncology*（v1/初稿旧版已归档，见 git 历史）
   - 结构：Abstract / Intro / Methods / Results / Discussion / Conclusion / Limitations / Figure Legends
   - 叙事方向（已订正）：NFPT → 跨三队列复现的 SF1-lineage 甲基化身份（c0 = Møller k1/k2/k3/k5 类比）；Møller 最高风险 k4（TPIT/PIT1, HR 3.63）对应分泌型组 c3/c4。原"NFPT→最高风险 k4"卖点经 562-DMP 探针级验证证伪
   - 纳入：三队列 PCA、跨队列投射、Møller-key 甲基化复现、Neou 内部聚类、GSE209903 转录交叉、CMap 药物重定位
@@ -103,13 +103,13 @@
   - `scripts/{moller_prognostic_validation.py, moller_multivariable_cox.py, moller_forest_plot.py}`
 
 ## 主要产物
-- `docs/`：11 份分析报告 + **manuscript-draft.md** + **methods-transparency-audit.md** + **narrative-reframing-options.md**
+- `docs/`：11 份分析报告 + **manuscript-v2.md** + **methods-transparency-audit.md** + **narrative-reframing-options.md**
 - `results/overview_figure.png`：6 面板综合成果图
 - `results/{GSE51618,GSE209903,GSE283928,GSE207937,risk_model,CMap,Neou}/`：各分析产物
 - `scripts/`：下载器（dl_geo_v2.py）+ 全部分析脚本（含 gse207937、CMap、Møller 文本提取、cluster_risk_mapping、neou_internal_cluster 等）
 
 ## 下一步（稿件精修）
-1. **用户审阅 manuscript-draft.md**：确定标题选择（A 或 B）、作者顺序、临床故事线
+1. **用户审阅 manuscript-v2.md（终稿）**：确定标题、作者顺序、临床故事线
 2. **补充真实参考文献**：把占位引用替换为 PubMed/DOI 完整条目（可用 nature-citation/ref-verifier skill）
 3. **语言润色**：Nature/Neuro-Oncology 风格（可用 nature-polishing skill）
 4. **Figure 优化**：按 Neuro-Oncology 规范重排 Figure 1–5（可用 academic-figures skill），含新增的 562-DMP 探针级验证图（Figure 4）与预后 KM 图（Figure 5）
