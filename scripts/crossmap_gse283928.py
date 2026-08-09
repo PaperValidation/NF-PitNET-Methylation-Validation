@@ -2,11 +2,11 @@ import gzip, json, os
 import numpy as np
 import pandas as pd
 
-from _paths import DATASET_PATH as BASE
+from _paths import DATASET_PATH as BASE, DATASET_PATH_TEMP as TEMP
 MATP = os.path.join(BASE, "GSE283928_MatrixProcessed_Normalized.txt.gz")
-PROBES = os.path.join(BASE, "results/risk_model/nfpt_up_epic_probes.csv")
-CL   = os.path.join(BASE, "results/GSE283928/cluster_assignment_k5.csv")
-OUT  = os.path.join(BASE, "results/risk_model/nfpt_program_by_cluster.json")
+PROBES = os.path.join(TEMP, "results/risk_model/nfpt_up_epic_probes.csv")
+CL   = os.path.join(TEMP, "results/GSE283928/cluster_assignment_k5.csv")
+OUT  = os.path.join(TEMP, "results/risk_model/nfpt_program_by_cluster.json")
 
 probes_df = pd.read_csv(PROBES)
 probe_list = probes_df.Probe.tolist()

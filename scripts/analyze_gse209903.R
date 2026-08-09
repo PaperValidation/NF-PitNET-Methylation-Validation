@@ -5,7 +5,7 @@ source("C:/Users/tidus/PycharmProjects/Neurosurgery-NF-PitNET/scripts/paths.R")
 suppressMessages({ library(data.table); library(dplyr); library(ggplot2) })
 BASE <- paths$DATASET_PATH_WSL
 DE   <- file.path(BASE, "GSE209903_FPT_vs_NFPT.txt.gz")
-OUT  <- file.path(BASE, "results", "GSE209903")
+OUT  <- file.path(paths$DATASET_PATH_TEMP_WSL, "results", "GSE209903")
 dir.create(OUT, showWarnings = FALSE, recursive = TRUE)
 
 dt <- fread(DE, sep = "\t", header = TRUE, data.table = FALSE)

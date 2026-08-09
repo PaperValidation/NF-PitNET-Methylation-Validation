@@ -18,9 +18,9 @@
 # ============================================================================
 import os, time, numpy as np, pandas as pd
 
-from _paths import DATASET_PATH as BASE_G
+from _paths import DATASET_PATH as BASE_G, DATASET_PATH_TEMP as TEMP
 MAT    = os.path.join(BASE_G, "GSE283928_MatrixProcessed_Normalized.txt.gz")
-CL     = os.path.join(BASE_G, "results", "GSE283928", "cluster_assignment_k5.csv")
+CL     = os.path.join(TEMP, "results", "GSE283928", "cluster_assignment_k5.csv")
 OUT    = "G:/CMCC Sync/Medical Data/Neurosurgery/NF-PitNET/Moller2025_derived/gse283928_centroids.npz"
 
 # cluster id -> name; 1 is the detection-pvalue artifact column group -> drop

@@ -23,13 +23,13 @@ from sklearn.decomposition import PCA
 from sklearn.cluster import KMeans
 from sklearn.metrics import silhouette_score
 
-from _paths import DATASET_PATH as BASE
+from _paths import DATASET_PATH as BASE, DATASET_PATH_TEMP as TEMP
 NE = "C:/Users/tidus/PycharmProjects/Neurosurgery-NF-PitNET"
 MAT_283 = os.path.join(BASE, "GSE283928_MatrixProcessed_Normalized.txt.gz")
 MAT_207 = os.path.join(BASE, "GSE207937_series_matrix.txt.gz")
-SAMP_207 = os.path.join(BASE, "samples", "GSE207937_samples.csv")
-CLUST_283 = os.path.join(BASE, "results", "GSE283928", "cluster_assignment_k5.csv")
-LIN = os.path.join(BASE, "results", "GSE283928", "lineage_marker_probes.csv")
+SAMP_207 = os.path.join(TEMP, "samples", "GSE207937_samples.csv")
+CLUST_283 = os.path.join(TEMP, "results", "GSE283928", "cluster_assignment_k5.csv")
+LIN = os.path.join(TEMP, "results", "GSE283928", "lineage_marker_probes.csv")
 NEU_ANNO = os.path.join(BASE, "E-MTAB-7762", "beta_out", "neou_sample_annotation.csv")
 NEU_BIN = os.path.join(BASE, "E-MTAB-7762", "beta_out", "neou_beta_full.bin")
 NEU_PROBES = os.path.join(BASE, "E-MTAB-7762", "beta_out", "neou_beta_probes.txt")

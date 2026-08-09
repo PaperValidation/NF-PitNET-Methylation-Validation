@@ -2,11 +2,11 @@ import gzip, csv, json, os
 import numpy as np
 import pandas as pd
 
-from _paths import DATASET_PATH as BASE
+from _paths import DATASET_PATH as BASE, DATASET_PATH_TEMP as TEMP
 MATP = os.path.join(BASE, "GSE283928_MatrixProcessed_Normalized.txt.gz")
-MK   = os.path.join(BASE, "results/GSE283928/lineage_marker_probes.csv")
-CL   = os.path.join(BASE, "results/GSE283928/cluster_assignment_k5.csv")
-OUT  = os.path.join(BASE, "results/GSE283928/lineage_cluster_validation.json")
+MK   = os.path.join(TEMP, "results/GSE283928/lineage_marker_probes.csv")
+CL   = os.path.join(TEMP, "results/GSE283928/cluster_assignment_k5.csv")
+OUT  = os.path.join(TEMP, "results/GSE283928/lineage_cluster_validation.json")
 
 print("Loading marker probe sets ...")
 mk = pd.read_csv(MK)

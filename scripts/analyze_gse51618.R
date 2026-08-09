@@ -7,7 +7,7 @@ suppressMessages({
 })
 BASE <- paths$DATASET_PATH_WSL
 MAT  <- file.path(BASE, "GSE51618_series_matrix.txt.gz")
-OUT  <- file.path(BASE, "results", "GSE51618")
+OUT  <- file.path(paths$DATASET_PATH_TEMP_WSL, "results", "GSE51618")
 dir.create(OUT, showWarnings = FALSE, recursive = TRUE)
 
 ## read matrix (skip ! header lines dynamically)
@@ -31,7 +31,7 @@ mode(mat) <- "numeric"
 message("Matrix dims: ", nrow(mat), " probes x ", ncol(mat), " samples")
 
 ## sample groups from master metadata
-meta <- fread(file.path(BASE, "metadata", "master_metadata.csv"))
+meta <- fread(file.path(paths$DATASET_PATH_TEMP_WSL, "metadata", "master_metadata.csv"))
 print(colnames(meta))
 g1 <- meta %>% filter(cohort == "GSE51618")
 g1$geo_sample <- gsub('"', '', g1$geo_sample)   # strip quoting from CSV

@@ -8,7 +8,7 @@ import os, csv, gzip, json, math
 import numpy as np
 from collections import Counter
 
-from _paths import DATASET_PATH as BASE
+from _paths import DATASET_PATH as BASE, DATASET_PATH_TEMP as TEMP
 PROJ = "C:/Users/tidus/PycharmProjects/Neurosurgery-NF-PitNET"
 OUT = os.path.join(PROJ, "results", "Moller2025")
 
@@ -51,7 +51,7 @@ def load_gse283928():
     bc = [j for j, h in enumerate(hdr) if h.endswith("_Beta")]
     Xb = X[:, bc]; bids = [hdr[j] for j in bc]
     clu = {}
-    with open(os.path.join(BASE, "results", "GSE283928", "cluster_assignment_k5.csv")) as f:
+    with open(os.path.join(TEMP, "results", "GSE283928", "cluster_assignment_k5.csv")) as f:
         for row in csv.DictReader(f): clu[row["sample_id"]] = int(row["cluster"])
     lab = np.array([clu.get(b, -1) for b in bids]); keep = np.isin(lab, [0,2,3,4])
     return np.array(probes), Xb[:, keep], lab[keep]

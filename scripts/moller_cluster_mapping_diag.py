@@ -5,7 +5,7 @@ import os, csv, gzip, json
 import numpy as np
 from collections import Counter
 
-from _paths import DATASET_PATH as BASE
+from _paths import DATASET_PATH as BASE, DATASET_PATH_TEMP as TEMP
 PROJ = "C:/Users/tidus/PycharmProjects/Neurosurgery-NF-PitNET"
 OUT = os.path.join(PROJ, "results", "Moller2025")
 
@@ -36,7 +36,7 @@ beta_cols = [j for j, h in enumerate(hdr) if h.endswith("_Beta")]
 Xb = X[:, beta_cols]
 beta_ids = [hdr[j] for j in beta_cols]
 clu = {}
-with open(os.path.join(BASE, "results", "GSE283928", "cluster_assignment_k5.csv")) as f:
+with open(os.path.join(TEMP, "results", "GSE283928", "cluster_assignment_k5.csv")) as f:
     for row in csv.DictReader(f):
         clu[row["sample_id"]] = int(row["cluster"])
 lab = np.array([clu.get(b, -1) for b in beta_ids])
@@ -89,7 +89,7 @@ for c in gse_clusters:
 # Møller-key gene beta per GSE283928 cluster (recompute for cross-check)
 print("\nCross-check: mean beta at Møller-key genes per GSE283928 cluster (from prior: c0 highest):")
 # reuse lineage_marker_probes.csv Moller_key set
-lin = os.path.join(BASE, "results", "GSE283928", "lineage_marker_probes.csv")
+lin = os.path.join(TEMP, "results", "GSE283928", "lineage_marker_probes.csv")
 mk = set()
 with open(lin) as f:
     for row in csv.DictReader(f):

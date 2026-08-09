@@ -15,12 +15,12 @@ from sklearn.cluster import KMeans
 from sklearn.decomposition import PCA
 from sklearn.metrics import silhouette_score
 
-from _paths import DATASET_PATH as BASE
+from _paths import DATASET_PATH as BASE, DATASET_PATH_TEMP as TEMP
 MAT_207937 = os.path.join(BASE, "GSE207937_series_matrix.txt.gz")
-SAMPLES_207937 = os.path.join(BASE, "samples", "GSE207937_samples.csv")
+SAMPLES_207937 = os.path.join(TEMP, "samples", "GSE207937_samples.csv")
 MAT_283928 = os.path.join(BASE, "GSE283928_MatrixProcessed_Normalized.txt.gz")
-LINEAGE = os.path.join(BASE, "results", "GSE283928", "lineage_marker_probes.csv")
-CLUST_283928 = os.path.join(BASE, "results", "GSE283928", "cluster_assignment_k5.csv")
+LINEAGE = os.path.join(TEMP, "results", "GSE283928", "lineage_marker_probes.csv")
+CLUST_283928 = os.path.join(TEMP, "results", "GSE283928", "cluster_assignment_k5.csv")
 OUT = "C:/Users/tidus/PycharmProjects/Neurosurgery-NF-PitNET/results/GSE207937"
 os.makedirs(OUT, exist_ok=True)
 

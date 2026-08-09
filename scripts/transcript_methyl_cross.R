@@ -5,8 +5,8 @@ suppressMessages({
 })
 
 BASE <- paths$DATASET_PATH_WSL
-RES  <- file.path(BASE, "results", "GSE209903")
-OUT  <- file.path(BASE, "results", "risk_model")
+RES  <- file.path(paths$DATASET_PATH_TEMP_WSL, "results", "GSE209903")
+OUT  <- file.path(paths$DATASET_PATH_TEMP_WSL, "results", "risk_model")
 dir.create(OUT, showWarnings = FALSE, recursive = TRUE)
 
 ## GSE209903 NFPT-up genes (NFPT higher = log2FC < 0)

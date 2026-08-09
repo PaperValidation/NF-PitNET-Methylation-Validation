@@ -4,8 +4,8 @@ import matplotlib.pyplot as plt
 import numpy as np
 import os, json
 
-from _paths import DATASET_PATH as BASE
-OUT = os.path.join(BASE, "results", "overview_figure.png")
+from _paths import DATASET_PATH as BASE, DATASET_PATH_TEMP as TEMP
+OUT = os.path.join(TEMP, "results", "overview_figure.png")
 os.makedirs(os.path.dirname(OUT), exist_ok=True)
 
 fig = plt.figure(figsize=(14, 9))
@@ -24,7 +24,7 @@ for b, s in zip(bars, sizes):
 
 # Panel B: lineage dominance score by tumor cluster
 axB = fig.add_subplot(2, 3, 2)
-ld = json.load(open(os.path.join(BASE, "results/GSE283928/lineage_cluster_validation.json")))
+ld = json.load(open(os.path.join(TEMP, "results/GSE283928/lineage_cluster_validation.json")))
 sd = ld["SF1_dominance_score_by_cluster"]
 tumors = [k for k in sd if k != "1"]
 vals = [sd[k]["mean_SF1_score"] for k in tumors]
@@ -55,7 +55,7 @@ axD.set_xlabel("priority")
 
 # Panel E: cross-omics methylation of NFPT-up program
 axE = fig.add_subplot(2, 3, 5)
-cm = json.load(open(os.path.join(BASE, "results/risk_model/nfpt_program_by_cluster.json")))
+cm = json.load(open(os.path.join(TEMP, "results/risk_model/nfpt_program_by_cluster.json")))
 ents = ["TUMOR_all", "NORMAL_all"]
 mv = [cm[e]["mean_methylation_NFPTup_program"] for e in ents]
 axE.bar(["Tumor (n=118)", "Normal (n=118)"], mv, color=["#4C72B0", "#C44E52"])

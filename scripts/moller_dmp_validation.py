@@ -10,7 +10,7 @@ import os, json, gzip, csv, time, math
 import numpy as np
 from collections import Counter
 
-from _paths import DATASET_PATH as BASE
+from _paths import DATASET_PATH as BASE, DATASET_PATH_TEMP as TEMP
 PROJ = "C:/Users/tidus/PycharmProjects/Neurosurgery-NF-PitNET"
 OUT = os.path.join(PROJ, "results", "Moller2025")
 os.makedirs(OUT, exist_ok=True)
@@ -76,7 +76,7 @@ def load_gse283928():
     beta_ids = [hdr[j] for j in beta_cols]             # keep full e.g. "Case1_Beta"
     # labels: only _Beta rows from cluster_assignment (exclude detection-pval artifact -> cluster 1)
     clu = {}
-    with open(os.path.join(BASE, "results", "GSE283928", "cluster_assignment_k5.csv")) as f:
+    with open(os.path.join(TEMP, "results", "GSE283928", "cluster_assignment_k5.csv")) as f:
         for row in csv.DictReader(f):
             clu[row["sample_id"]] = int(row["cluster"])
     lab = np.array([clu.get(bid, -1) for bid in beta_ids])   # -1 for missing

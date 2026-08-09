@@ -13,7 +13,7 @@ import numpy as np
 
 NE = "C:/Users/tidus/PycharmProjects/Neurosurgery-NF-PitNET"
 OUT = os.path.join(NE, "results", "Neou")
-from _paths import DATASET_PATH as G
+from _paths import DATASET_PATH as G, DATASET_PATH_TEMP as TEMP
 # ST1 : Joint PCA cohort centroids + explained variance
 # ---------------------------------------------------------------------------
 pc = list(csv.DictReader(open(os.path.join(OUT, "joint_pca_coords.csv"))))
@@ -50,7 +50,7 @@ print("[ST1] PC1 ratio=%.4f (expect ~0.2923), PC2=%.4f (expect ~0.0967), cum20=%
       % (ratio[0], ratio[1], ratio[:20].sum()))
 
 # GSE283928 per-cluster centroids in PCA space (enrichment: reference taxonomy separation)
-cl = {r["sample_id"]: int(r["cluster"]) for r in csv.DictReader(open(os.path.join(G, "results", "GSE283928", "cluster_assignment_k5.csv")))}
+cl = {r["sample_id"]: int(r["cluster"]) for r in csv.DictReader(open(os.path.join(TEMP, "results", "GSE283928", "cluster_assignment_k5.csv")))}
 gse = [r for r in pc if r["cohort"] == "GSE283928"]
 clusters = [0, 2, 3, 4]
 clrows = []

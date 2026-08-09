@@ -7,9 +7,9 @@ Memory: use float32, read in chunks to stay under ~4GB.
 """
 import gzip, numpy as np, csv, os, json, time
 
-from _paths import DATASET_PATH as BASE
+from _paths import DATASET_PATH as BASE, DATASET_PATH_TEMP as TEMP
 MAT  = os.path.join(BASE, "GSE283928_MatrixProcessed_Normalized.txt.gz")
-OUT  = os.path.join(BASE, "results", "GSE283928")
+OUT  = os.path.join(TEMP, "results", "GSE283928")
 os.makedirs(OUT, exist_ok=True)
 
 MOLLER_KEY_GENES = ["CCDC141","ATP1A3","ANK2","CASC15","HDC","NCKAP5","GUCA1C","ATP2C1",

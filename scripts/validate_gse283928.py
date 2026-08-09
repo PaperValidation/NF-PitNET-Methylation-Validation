@@ -5,9 +5,9 @@
 """
 import gzip, numpy as np, csv, os, json
 
-from _paths import DATASET_PATH as BASE
+from _paths import DATASET_PATH as BASE, DATASET_PATH_TEMP as TEMP
 MAT  = os.path.join(BASE, "GSE283928_MatrixProcessed_Normalized.txt.gz")
-OUT  = os.path.join(BASE, "results", "GSE283928")
+OUT  = os.path.join(TEMP, "results", "GSE283928")
 
 # load cluster assignment
 assign = {}

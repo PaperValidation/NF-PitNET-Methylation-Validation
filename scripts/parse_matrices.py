@@ -4,8 +4,8 @@ Outputs <DATASET>/samples/<GSE>_samples.csv
 """
 import os, re, csv, gzip, sys
 
-GDRIVE = "G:/CMCC Sync/Medical Data/Neurosurgery/NF-PitNET"
-OUTDIR = os.path.join(GDRIVE, "samples")
+from _paths import DATASET_PATH as GDRIVE, DATASET_PATH_TEMP as TEMP
+OUTDIR = os.path.join(TEMP, "samples")
 os.makedirs(OUTDIR, exist_ok=True)
 
 # metadata fields we care about (collected in sample order)

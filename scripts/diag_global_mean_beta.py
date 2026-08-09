@@ -2,10 +2,10 @@ import gzip, json, os
 import numpy as np
 import pandas as pd
 
-from _paths import DATASET_PATH as BASE
+from _paths import DATASET_PATH as BASE, DATASET_PATH_TEMP as TEMP
 MATP = os.path.join(BASE, "GSE283928_MatrixProcessed_Normalized.txt.gz")
-CL   = os.path.join(BASE, "results/GSE283928/cluster_assignment_k5.csv")
-OUT  = os.path.join(BASE, "results/GSE283928/cluster_global_mean_beta.json")
+CL   = os.path.join(TEMP, "results/GSE283928/cluster_assignment_k5.csv")
+OUT  = os.path.join(TEMP, "results/GSE283928/cluster_global_mean_beta.json")
 
 cl = pd.read_csv(CL)
 cl_map = dict(zip(cl["sample_id"], cl["cluster"]))

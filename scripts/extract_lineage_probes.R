@@ -5,7 +5,7 @@ suppressMessages({
 })
 
 BASE <- paths$DATASET_PATH_WSL
-OUT  <- file.path(BASE, "results", "GSE283928")
+OUT  <- file.path(paths$DATASET_PATH_TEMP_WSL, "results", "GSE283928")
 dir.create(OUT, showWarnings = FALSE, recursive = TRUE)
 
 ## EPIC annotation (probe-level)

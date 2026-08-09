@@ -7,8 +7,8 @@ suppressMessages({
   library(dplyr); library(stringr); library(readr)
 })
 BASE <- paths$DATASET_PATH_WSL
-SAMP <- file.path(BASE, "samples")
-OUT  <- file.path(BASE, "metadata")
+SAMP <- file.path(paths$DATASET_PATH_TEMP_WSL, "samples")
+OUT  <- file.path(paths$DATASET_PATH_TEMP_WSL, "metadata")
 dir.create(OUT, showWarnings = FALSE, recursive = TRUE)
 
 ## ---- GSE51618: explicit invasion labels, microarray ----

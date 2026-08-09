@@ -6,8 +6,8 @@ suppressMessages({
 })
 
 BASE <- paths$DATASET_PATH_WSL
-RES  <- file.path(BASE, "results", "GSE209903")
-OUT  <- file.path(BASE, "results", "risk_model")
+RES  <- file.path(paths$DATASET_PATH_TEMP_WSL, "results", "GSE209903")
+OUT  <- file.path(paths$DATASET_PATH_TEMP_WSL, "results", "risk_model")
 dir.create(OUT, showWarnings = FALSE, recursive = TRUE)
 
 ## 1. Load GSE209903 DE (FPT vs NFPT), already annotated with ENSG + we map to SYMBOL via simple map
