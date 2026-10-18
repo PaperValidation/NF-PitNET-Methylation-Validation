@@ -1,9 +1,10 @@
 #!/usr/bin/env Rscript
+source("C:/Users/tidus/PycharmProjects/Neurosurgery-NF-PitNET/scripts/paths.R")
 # Export Neou EPIC beta matrix (cg-keyed) from RDS to a Python-readable binary.
 # Avoids rpy2: writes dims + float64 matrix + probe/sample name files.
 args <- commandArgs(trailingOnly = TRUE)
-RDS <- "G:/CMCC Sync/Medical Data/Neurosurgery/NF-PitNET/E-MTAB-7762/beta_out/neou_beta_cg.rds"
-OUTDIR <- "G:/CMCC Sync/Medical Data/Neurosurgery/NF-PitNET/E-MTAB-7762/beta_out"
+RDS <- file.path(paths$DATASET_PATH_WSL, "E-MTAB-7762", "beta_out", "neou_beta_cg.rds")
+OUTDIR <- file.path(paths$DATASET_PATH_WSL, "E-MTAB-7762", "beta_out")
 if (length(args) >= 1) RDS <- args[1]
 if (length(args) >= 2) OUTDIR <- args[2]
 

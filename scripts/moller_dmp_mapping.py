@@ -14,7 +14,7 @@ OUT = os.path.join(PROJ, "results", "Moller2025")
 
 import openpyxl, warnings
 warnings.filterwarnings("ignore")
-wb = openpyxl.load_workbook(os.path.join("G:/CMCC Sync/Medical Data/Neurosurgery/NF-PitNET/Moller2025_supplement", "extracted", "Supplementary_File_S2.xlsx"), read_only=True)
+wb = openpyxl.load_workbook(os.path.join(BASE, "Moller2025_supplement", "extracted", "Supplementary_File_S2.xlsx"), read_only=True)
 ws = wb["Specific probe methylation"]
 dmp = []
 for i, r in enumerate(ws.iter_rows(values_only=True)):

@@ -20,9 +20,10 @@ from lifelines import CoxPHFitter
 from lifelines.statistics import logrank_test
 
 VENV = "C:/Users/tidus/.workbuddy/binaries/python/envs/default/Scripts/python.exe"
-SUPP    = "G:/CMCC Sync/Medical Data/Neurosurgery/NF-PitNET/Moller2025_supplement"
-MENDELEY= "G:/CMCC Sync/Medical Data/Neurosurgery/NF-PitNET/Mendeley_Moller2025"
-DERIVED = "G:/CMCC Sync/Medical Data/Neurosurgery/NF-PitNET/Moller2025_derived"
+from _paths import DATASET_PATH as BASE
+SUPP    = os.path.join(BASE, "Moller2025_supplement")
+MENDELEY= os.path.join(BASE, "Mendeley_Moller2025")
+DERIVED = os.path.join(BASE, "Moller2025_derived")
 MOLLER_BETA = os.path.join(MENDELEY, "mendeley_beta_cg.csv.gz")
 MANIFEST    = os.path.join(MENDELEY, "mendeley_sample_manifest.csv")
 CENT        = os.path.join(DERIVED, "gse283928_centroids.npz")
@@ -36,7 +37,7 @@ os.makedirs(OUTDIR, exist_ok=True)
 if not os.path.exists(MOLLER_BETA):
     print(f"STOP: Møller beta not found at {MOLLER_BETA}")
     print("Action required: download Mendeley Data DOI 10.17632/vr2wb38r6t.1")
-    print("  -> place Deidentified_IDATs/ + SampleSheet.xlsx under G:/CMCC Sync/Medical Data/Neurosurgery/NF-PitNET/Mendeley_Moller2025/")
+    print(f"  -> place Deidentified_IDATs/ + SampleSheet.xlsx under {MENDELEY}/")
     print("  -> run: Rscript scripts/moller_idat_to_beta.R")
     print("Then re-run this script.")
     raise SystemExit(1)

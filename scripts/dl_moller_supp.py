@@ -1,5 +1,6 @@
 import re, hashlib, os, sys
 import requests
+from _paths import DATASET_PATH as BASE
 
 PROXIES = None  # direct connection to NCBI works; proxy IP was blocked
 HEADERS = {
@@ -8,7 +9,7 @@ HEADERS = {
     "Referer": "https://pmc.ncbi.nlm.nih.gov/articles/PMC13070495/",
 }
 ZIP_URL = "https://pmc.ncbi.nlm.nih.gov/articles/instance/13070495/bin/noaf269_supplementary_data.zip"
-OUT = "G:/CMCC Sync/Medical Data/Neurosurgery/NF-PitNET/Moller2025_supplement/noaf269_supplementary_data.zip"
+OUT = os.path.join(BASE, "Moller2025_supplement", "noaf269_supplementary_data.zip")
 os.makedirs(os.path.dirname(OUT), exist_ok=True)
 
 def get_challenge():

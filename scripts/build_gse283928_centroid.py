@@ -8,7 +8,7 @@
 # per-probe mean/SD over the 118 real tumor samples, and caches everything to a
 # small .npz so the projection step never reloads the 917 MB matrix.
 #
-# Output: G:/CMCC Sync/Medical Data/Neurosurgery/NF-PitNET/Moller2025_derived/gse283928_centroids.npz
+# Output: <DATASET_PATH>/Moller2025_derived/gse283928_centroids.npz
 #   - probes      : (P,) cg probe ids (intersection-ready with Møller cg)
 #   - centroid_c0/c2/c3/c4 : (P,) mean beta per probe for each real cluster
 #   - probe_mean  : (P,) probe mean across real tumor samples
@@ -21,7 +21,7 @@ import os, time, numpy as np, pandas as pd
 from _paths import DATASET_PATH as BASE_G, DATASET_PATH_TEMP as TEMP
 MAT    = os.path.join(BASE_G, "GSE283928_MatrixProcessed_Normalized.txt.gz")
 CL     = os.path.join(TEMP, "results", "GSE283928", "cluster_assignment_k5.csv")
-OUT    = "G:/CMCC Sync/Medical Data/Neurosurgery/NF-PitNET/Moller2025_derived/gse283928_centroids.npz"
+OUT    = os.path.join(BASE_G, "Moller2025_derived", "gse283928_centroids.npz")
 
 # cluster id -> name; 1 is the detection-pvalue artifact column group -> drop
 REAL = {0: "c0", 2: "c2", 3: "c3", 4: "c4"}

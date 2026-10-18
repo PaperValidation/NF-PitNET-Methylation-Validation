@@ -1,9 +1,10 @@
 #!/usr/bin/env Rscript
+source("C:/Users/tidus/PycharmProjects/Neurosurgery-NF-PitNET/scripts/paths.R")
 # Diagnostic: classify each IDAT array by probe count, map to SampleSheet rows.
 suppressMessages(library(illuminaio))
 suppressMessages(library(minfi))
 
-BASE <- "/mnt/g/CMCC Sync/Medical Data/Neurosurgery/NF-PitNET/Mendeley_Moller2025"
+BASE <- file.path(paths$DATASET_PATH_WSL, "Mendeley_Moller2025")
 SS   <- file.path(BASE, "SampleSheet.xlsx")
 
 # 1) read SampleSheet (first sheet)

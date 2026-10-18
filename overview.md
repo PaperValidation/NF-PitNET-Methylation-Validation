@@ -86,7 +86,7 @@
 - 产物：`docs/moller-dmp-probe-validation.md` / `results/Moller2025/{moller_dmp_probe_validation.csv, moller_dmp_validation_summary.json, moller_k_cluster_mapping.json, moller_dmp_validation_figure.png}` / `scripts/{dl_moller_supp.py, moller_dmp_validation.py, moller_dmp_mapping.py, moller_dmp_figure.py}`
 
 ### 里程碑 10：Møller 117-NF-PitNET 直接预后验证（已完成，2026-07-31 深夜）
-- **数据来源**：`G:/CMCC Sync/Medical Data/Neurosurgery/NF-PitNET/Moller2025_supplement/` 下的 `noaf269_supplementary_data.zip` → `Supplementary_File_S1.xlsx`（原始数据已迁移至 DATASET_PATH G 盘；无需额外下载）
+- **数据来源**：`E:/Medical Data/Neurosurgery/NF-PitNET/Moller2025_supplement/` 下的 `noaf269_supplementary_data.zip` → `Supplementary_File_S1.xlsx`（原始数据已在 DATASET_PATH；2026-10-18 路径更新）
   - "Main Cohort"：117 例 silent gonadotroph NF-PitNET 的 k1–k5 标签
   - "Main Cohort Follow Up Data"：纵向随访扫描，含 `ReOP`/`Reintervention` 与 `Cumulated regrowth %`
 - **事件定义**：再手术（ReOP）或再干预（Reintervention）= 1；时间 = 首次事件扫描年 / 末次随访（删失）

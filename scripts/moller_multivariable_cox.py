@@ -14,9 +14,10 @@ import numpy as np
 import pandas as pd
 from lifelines import CoxPHFitter
 
-S1 = "G:/CMCC Sync/Medical Data/Neurosurgery/NF-PitNET/Moller2025_supplement/extracted/Supplementary_File_S1.xlsx"
-OUT = "results/Moller2025/prognostic_validation"
 import os
+from _paths import DATASET_PATH as BASE
+S1 = os.path.join(BASE, "Moller2025_supplement", "extracted", "Supplementary_File_S1.xlsx")
+OUT = "results/Moller2025/prognostic_validation"
 os.makedirs(OUT, exist_ok=True)
 
 # ---------- load ----------

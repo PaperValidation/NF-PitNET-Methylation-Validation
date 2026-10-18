@@ -1,4 +1,5 @@
 #!/usr/bin/env Rscript
+source("C:/Users/tidus/PycharmProjects/Neurosurgery-NF-PitNET/scripts/paths.R")
 # ============================================================================
 # Neou 2020 (E-MTAB-7762) raw .idat -> beta matrix (Illumina 450K)
 # Run under WSL: Rscript neou_idat_to_beta.R
@@ -10,7 +11,7 @@ suppressMessages({
   library(data.table)
 })
 
-BASE <- "/mnt/g/CMCC Sync/Medical Data/Neurosurgery/NF-PitNET/E-MTAB-7762"
+BASE <- file.path(paths$DATASET_PATH_WSL, "E-MTAB-7762")
 SDRF <- file.path(BASE, "E-MTAB-7762.sdrf.txt")
 OUT  <- file.path(BASE, "beta_out")
 dir.create(OUT, showWarnings = FALSE, recursive = TRUE)

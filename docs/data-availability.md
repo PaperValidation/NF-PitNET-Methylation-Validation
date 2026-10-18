@@ -11,13 +11,17 @@
 - **1 个甲基化队列的原始 idat + 随访标签**（Møller 2025，Mendeley）：用于零 k-label 的从头投射与直接预后验证（再手术/再生长硬终点）。
 - **1 个转录组队列**（GSE209903）：用于甲基化–转录一致性交叉验证。
 
-### 本地存储约定（2026-08-09 起，见项目 `.env`）
+### 本地存储约定（2026-10-18 更新，见项目 `.env`）
 
-| 变量 | 路径 | 内容 | 是否云同步 |
+> **⚠️ 磁盘已于 2026-09~10 重组**：原 `G:\CMCC Sync\...` 目录已完全不存在，请勿再使用旧路径。
+
+| 变量 | 路径 | 内容 | 备注 |
 |---|---|---|---|
-| `DATASET_PATH` | `G:\CMCC Sync\Medical Data\Neurosurgery\NF-PitNET` | **原始数据**：series matrix、idat、补充包 | 是（CMCC Sync） |
-| `DATASET_PATH_TEMP` | `E:\Data Temp\NF-PitNET` | **派生/中间/临时**：results、metadata、samples、intermediates、logs、papers、_wsl_scripts | 否（本地盘） |
+| `DATASET_PATH` | `E:\Medical Data\Neurosurgery\NF-PitNET` | **原始数据**：series matrix、idat、补充包 | `E:\Medical Data` 按科室分目录 |
+| `DATASET_PATH_TEMP` | `F:\Data Temp\NF-PitNET` | **派生/中间/临时**：results、metadata、samples、intermediates、logs、papers、_wsl_scripts | 本地盘，不同步 |
 | 项目 `results/` | `C:\...\Neurosurgery-NF-PitNET\results` | 投稿交付物（图、验证表、汇总 JSON） | — |
+
+WSL 形态：`/mnt/e/Medical Data/Neurosurgery/NF-PitNET`、`/mnt/f/Data Temp/NF-PitNET`。
 
 所有脚本通过 `scripts/_paths.py`（Python）/ `scripts/paths.R`（R）从 `.env` 读取路径，不硬编码。
 

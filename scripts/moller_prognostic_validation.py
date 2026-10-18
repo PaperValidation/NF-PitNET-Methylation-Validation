@@ -20,7 +20,8 @@ from lifelines.statistics import logrank_test
 from scipy import stats
 
 ROOT = "results/Moller2025"   # derived outputs stay alongside code on C:
-SUPP = "G:/CMCC Sync/Medical Data/Neurosurgery/NF-PitNET/Moller2025_supplement"
+from _paths import DATASET_PATH as BASE
+SUPP = os.path.join(BASE, "Moller2025_supplement")
 S1 = os.path.join(SUPP, "extracted", "Supplementary_File_S1.xlsx")
 OUT = os.path.join(ROOT, "prognostic_validation")
 os.makedirs(OUT, exist_ok=True)

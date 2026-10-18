@@ -22,10 +22,11 @@ import pandas as pd
 import matplotlib
 matplotlib.use("Agg")
 import matplotlib.pyplot as plt
+from _paths import DATASET_PATH
 
 BASE = "C:/Users/tidus/PycharmProjects/Neurosurgery-NF-PitNET"
-CENT = "G:/CMCC Sync/Medical Data/Neurosurgery/NF-PitNET/Moller2025_derived/gse283928_centroids.npz"
-GSE  = "G:/CMCC Sync/Medical Data/Neurosurgery/NF-PitNET/GSE115783/GSE115783_series_matrix.txt.gz"
+CENT = os.path.join(DATASET_PATH, "Moller2025_derived", "gse283928_centroids.npz")
+GSE  = os.path.join(DATASET_PATH, "GSE115783", "GSE115783_series_matrix.txt.gz")
 OUTD = os.path.join(BASE, "results/Moller2025/gse115783_validation")
 os.makedirs(OUTD, exist_ok=True)
 

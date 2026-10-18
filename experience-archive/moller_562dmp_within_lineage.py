@@ -20,15 +20,19 @@ Outputs:
   results/Moller2025/within_lineage_562dmp/moller_562dmp_summary.json
   results/Moller2025/within_lineage_562dmp/moller_562dmp_confusion.png
 """
-import os, json, glob
+import os, json, glob, sys
 import numpy as np
 import pandas as pd
+
+# This is an archived demo copy; the shared path loader lives in scripts/.
+sys.path.insert(0, os.path.join(os.path.dirname(os.path.dirname(os.path.abspath(__file__))), "scripts"))
+from _paths import DATASET_PATH
 
 BASE = r"C:/Users/tidus/PycharmProjects/Neurosurgery-NF-PitNET"
 RES = os.path.join(BASE, "results/Moller2025/within_lineage_562dmp")
 os.makedirs(RES, exist_ok=True)
 
-BETA_GZ = r"G:/CMCC Sync/Medical Data/Neurosurgery/NF-PITNET/Mendeley_Moller2025/mendeley_beta_cg.csv.gz"
+BETA_GZ = os.path.join(DATASET_PATH, "Mendeley_Moller2025", "mendeley_beta_cg.csv.gz")
 DMP_CSV = os.path.join(BASE, "results/Moller2025/moller_dmp_probe_validation.csv")
 ASSIGN_CSV = os.path.join(BASE, "results/Moller2025/strict_projection/moller_strict_assignment.csv")
 

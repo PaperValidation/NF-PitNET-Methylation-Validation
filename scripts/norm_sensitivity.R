@@ -20,7 +20,7 @@
 # ============================================================================
 suppressMessages({library(minfi)})
 source("C:/Users/tidus/PycharmProjects/Neurosurgery-NF-PitNET/scripts/paths.R")
-BASE <- paths$DATASET_PATH_WSL          # /mnt/g/... (raw data)
+BASE <- paths$DATASET_PATH_WSL          # /mnt/e/... (raw data)
 TEMP <- paths$DATASET_PATH_TEMP_WSL      # /mnt/e/Data Temp/NF-PitNET (intermediates)
 
 idat.dir <- file.path(BASE, "E-MTAB-7762", "idat_flat")

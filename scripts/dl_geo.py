@@ -2,7 +2,7 @@ import sys, os, time, re
 import urllib.request
 import socks
 
-GDRIVE = "G:/CMCC Sync/Medical Data/Neurosurgery/NF-PitNET"
+from _paths import DATASET_PATH as GDRIVE
 os.makedirs(GDRIVE, exist_ok=True)
 
 def make_opener():

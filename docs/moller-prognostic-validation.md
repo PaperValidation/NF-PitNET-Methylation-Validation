@@ -14,7 +14,7 @@ That mapping was independent of any regrowth label. The next step is to test whe
 
 ## 2. Cohort used
 
-**Møller 2025 discovery cohort** — 117 silent gonadotroph NF-PitNETs profiled on Illumina EPIC v1 (850K) with longitudinal imaging follow-up and reoperation/reintervention records. The labels are contained in the paper's supplementary cohort table (`noaf269_supplementary_data.zip` → `Supplementary_File_S1.xlsx`), stored on the project DATASET_PATH at `G:/CMCC Sync/Medical Data/Neurosurgery/NF-PitNET/Moller2025_supplement/` (downloaded in the previous 562-DMP work).
+**Møller 2025 discovery cohort** — 117 silent gonadotroph NF-PitNETs profiled on Illumina EPIC v1 (850K) with longitudinal imaging follow-up and reoperation/reintervention records. The labels are contained in the paper's supplementary cohort table (`noaf269_supplementary_data.zip` → `Supplementary_File_S1.xlsx`), stored on the project DATASET_PATH at `E:/Medical Data/Neurosurgery/NF-PitNET/Moller2025_supplement/` (downloaded in the previous 562-DMP work; path updated 2026-10-18 after disk reorganisation).
 
 Sheets used:
 

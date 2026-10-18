@@ -1,8 +1,9 @@
 #!/usr/bin/env Rscript
+source("C:/Users/tidus/PycharmProjects/Neurosurgery-NF-PitNET/scripts/paths.R")
 # Finalize Neou beta: annotate (cg-keyed) + sample annotation, from saved RDS.
 # Avoids re-reading idat (5 min). Run under WSL.
 suppressMessages({ library(minfi); library(data.table) })
-BASE   <- "/mnt/g/CMCC Sync/Medical Data/Neurosurgery/NF-PitNET/E-MTAB-7762"
+BASE   <- file.path(paths$DATASET_PATH_WSL, "E-MTAB-7762")
 OUT    <- file.path(BASE, "beta_out")
 SDRF   <- file.path(BASE, "E-MTAB-7762.sdrf.txt")
 

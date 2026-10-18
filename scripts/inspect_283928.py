@@ -1,5 +1,6 @@
+from _paths import DATASET_PATH as BASE
 import gzip, numpy as np
-MAT = "G:/CMCC Sync/Medical Data/Neurosurgery/NF-PitNET/GSE283928_MatrixProcessed_Normalized.txt.gz"
+MAT = os.path.join(BASE, "GSE283928_MatrixProcessed_Normalized.txt.gz")
 with gzip.open(MAT, "rt", encoding="utf-8", errors="ignore") as f:
     hdr = f.readline().rstrip("\n").split("\t")
 beta = [i for i, h in enumerate(hdr) if h.endswith("_Beta")]

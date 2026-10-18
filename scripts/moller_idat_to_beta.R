@@ -1,10 +1,11 @@
 #!/usr/bin/env Rscript
+source("C:/Users/tidus/PycharmProjects/Neurosurgery-NF-PitNET/scripts/paths.R")
 # ============================================================================
 # Møller 2025 (PMID 41369112) raw EPIC 850K .idat -> beta matrix (cg probes)
 # ----------------------------------------------------------------------------
 # Input  (user-supplied, from Mendeley Data DOI 10.17632/vr2wb38r6t.1, on DATASET_PATH G: drive):
-#   G:/CMCC Sync/Medical Data/Neurosurgery/NF-PitNET/Mendeley_Moller2025/Deidentified_IDATs/   # .idat
-#   G:/CMCC Sync/Medical Data/Neurosurgery/NF-PitNET/Mendeley_Moller2025/SampleSheet.xlsx      # Sentrix_ID, Sentrix_Position, Sample_ID(FFPE-MM-X)
+#   <DATASET_PATH>/Mendeley_Moller2025/Deidentified_IDATs/   # .idat
+#   <DATASET_PATH>/Mendeley_Moller2025/SampleSheet.xlsx      # Sentrix_ID, Sentrix_Position, Sample_ID(FFPE-MM-X)
 # Output (written alongside the raw data on G:, NOT the C: project dir):
 #   <Mendeley_Moller2025>/mendeley_beta_cg.rds     # matrix: cg probes x samples, colnames = IDAT basename
 #   <Mendeley_Moller2025>/mendeley_beta_cg.csv.gz  # same, gzipped TSV (colnames = IDAT basename)
@@ -33,8 +34,8 @@ suppressMessages({
 })
 
 # Raw Mendeley data lives on the DATASET_PATH G: drive (NOT the C: project dir)
-moller_root_wsl <- "/mnt/g/CMCC Sync/Medical Data/Neurosurgery/NF-PitNET/Mendeley_Moller2025"
-moller_root_win <- "G:/CMCC Sync/Medical Data/Neurosurgery/NF-PitNET/Mendeley_Moller2025"
+moller_root_wsl <- file.path(paths$DATASET_PATH_WSL, "Mendeley_Moller2025")
+moller_root_win <- file.path(paths$DATASET_PATH, "Mendeley_Moller2025")
 root     <- if (.Platform$OS.type == "windows") moller_root_win else moller_root_wsl
 idat_dir <- file.path(root, "Deidentified_IDATs")
 sheet    <- file.path(root, "SampleSheet.xlsx")

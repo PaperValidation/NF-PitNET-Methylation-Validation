@@ -4,9 +4,10 @@
 #   Mendeley_Moller2025/SampleSheet.xlsx
 # exist directly (what moller_idat_to_beta.R expects).
 import os, zipfile, sys
+from _paths import DATASET_PATH as BASE
 
-ZIP = r"G:\CMCC Sync\Medical Data\Neurosurgery\NF-PitNET\Mendeley_Moller2025\Raw DNA Methylation Data; Møller et al., 2025.zip"
-DST = r"G:\CMCC Sync\Medical Data\Neurosurgery\NF-PitNET\Mendeley_Moller2025"
+ZIP = os.path.join(BASE, "Mendeley_Moller2025", "Raw DNA Methylation Data; Møller et al., 2025.zip")
+DST = os.path.join(BASE, "Mendeley_Moller2025")
 
 with zipfile.ZipFile(ZIP) as zf:
     names = zf.namelist()

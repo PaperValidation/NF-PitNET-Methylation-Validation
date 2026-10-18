@@ -1,3 +1,4 @@
+from _paths import DATASET_PATH_TEMP as TEMP
 import urllib.request, re, os, sys
 try:
     import socks, socket
@@ -18,7 +19,7 @@ def open_via_proxy(url):
     req = ur.Request(url, headers={"User-Agent":"Mozilla/5.0"})
     return ur.build_opener().open(req, timeout=60).read()
 
-outdir = r"G:\CMCC Sync\Medical Data\Neurosurgery\NF-PitNET"
+outdir = os.path.join(TEMP, "papers")
 os.makedirs(outdir, exist_ok=True)
 url = "https://pmc.ncbi.nlm.nih.gov/articles/PMC13070495/?report=printable"
 try:

@@ -1,6 +1,6 @@
 # GSE115783 外部验证数据下载 — 实测诊断
 
-> **✅ 已解决（2026-08-01 同日）**：NCBI 本环境阻断仍在，但用户改为**手动下载** `GSE115783_series_matrix.txt.gz` + `GSE115783_RAW.tar` 并放入 `G:/CMCC Sync/Medical Data/Neurosurgery/NF-PITNET/GSE115783/`。series_matrix 数据表即 ChAMP 处理 β 值，直接读入投影即可。结果：**34 NFPA 肿瘤 32/34=94.1%→c0，6 正常对照仅 33.3%→c0（特异性对照）**；跨平台 HM450 缺口已闭合，manuscript §3.9 + Figure 6 已写入。下方为当时"本环境无法自动下载"的诊断记录，保留供复盘。
+> **✅ 已解决（2026-08-01 同日）**：NCBI 本环境阻断仍在，但用户改为**手动下载** `GSE115783_series_matrix.txt.gz` + `GSE115783_RAW.tar` 并放入 `E:/Medical Data/Neurosurgery/NF-PitNET/GSE115783/`。series_matrix 数据表即 ChAMP 处理 β 值，直接读入投影即可。结果：**34 NFPA 肿瘤 32/34=94.1%→c0，6 正常对照仅 33.3%→c0（特异性对照）**；跨平台 HM450 缺口已闭合，manuscript §3.9 + Figure 6 已写入。下方为当时"本环境无法自动下载"的诊断记录，保留供复盘。
 
 > 日期：2026-08-01
 > 背景：manuscript 的 Future directions (ii) 把 GSE115783（34 NFPA, Illumina 450K）列为唯一独立的 NFPA-only 甲基化阵列，用于跨平台（HM450 vs 我们的 EPIC-850K）确认 86%→c0 映射。用户指出 `Guidiance/lessons-learned/ncbi-pmc-pow` 方案可解决 NCBI 403，要求尝试。
@@ -37,7 +37,7 @@
 
 - **EBI / BioStudies 确实托管 E-GEOD-115783**（步骤 7 实测 200），但数据文件通过 BioStudies 的 JS 前端 + API 暴露，脚本化直链拿不到。
 - **可行出路（任选其一）**：
-  1. **经 EBI 网页 UI 手动下载**：浏览器打开 `https://www.ebi.ac.uk/biostudies/studies/E-GEOD-115783`，手动导出 β 矩阵/处理数据，丢到 `G:/CMCC Sync/Medical Data/Neurosurgery/NF-PITNET/GSE115783/`，我再跑投影。
+  1. **经 EBI 网页 UI 手动下载**：浏览器打开 `https://www.ebi.ac.uk/biostudies/studies/E-GEOD-115783`，手动导出 β 矩阵/处理数据，丢到 `E:/Medical Data/Neurosurgery/NF-PitNET/GSE115783/`，我再跑投影。
   2. **等 NCBI 访问恢复**：换住宅 IP 的机器、或本机代理（8428/1987）重启后重试 `ftp.ncbi.nlm.nih.gov` 直连。
   3. **换一个本环境可达的 HM450 NFPA 队列**（若接受替代而非 GSE115783 本身）。
 

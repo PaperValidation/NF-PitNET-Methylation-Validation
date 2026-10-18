@@ -20,7 +20,7 @@ os.makedirs(OUT, exist_ok=True)
 # ---------------------------------------------------------------------------
 import openpyxl, warnings
 warnings.filterwarnings("ignore")
-S2 = os.path.join("G:/CMCC Sync/Medical Data/Neurosurgery/NF-PitNET/Moller2025_supplement", "extracted", "Supplementary_File_S2.xlsx")
+S2 = os.path.join(BASE, "Moller2025_supplement", "extracted", "Supplementary_File_S2.xlsx")
 wb = openpyxl.load_workbook(S2, read_only=True)
 ws = wb["Specific probe methylation"]
 dmp = []

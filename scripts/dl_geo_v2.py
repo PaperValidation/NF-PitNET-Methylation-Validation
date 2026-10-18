@@ -8,7 +8,7 @@ Skips the >16KB write bug by streaming through Python (not curl -o).
 import sys, os, re, time, urllib.request
 import socks
 
-GDRIVE = "G:/CMCC Sync/Medical Data/Neurosurgery/NF-PitNET"
+from _paths import DATASET_PATH as GDRIVE
 
 def patch_proxy(rdns=True):
     orig = urllib.request.socket.create_connection

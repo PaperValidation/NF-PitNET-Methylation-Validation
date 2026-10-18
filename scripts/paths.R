@@ -1,13 +1,13 @@
 # Centralized dataset paths loaded from the project root .env.
 #
-# Source of truth for DATASET_PATH (raw/permanent, G:/CMCC Sync) and
+# Source of truth for DATASET_PATH (raw/permanent, E:/Medical Data) and
 # DATASET_PATH_TEMP (intermediate/temp, E:/Data Temp). Scripts should source
 # this file and read paths from the returned list instead of hardcoding.
 #
 # Usage (from an R script inside scripts/):
 #   source("C:/Users/tidus/PycharmProjects/Neurosurgery-NF-PitNET/scripts/paths.R")
-#   BASE  <- paths$DATASET_PATH_WSL          # /mnt/g/...   (WSL form)
-#   TEMP  <- paths$DATASET_PATH_TEMP_WSL     # /mnt/e/Data Temp/NF-PitNET
+#   BASE  <- paths$DATASET_PATH_WSL          # /mnt/e/...   (WSL form)
+#   TEMP  <- paths$DATASET_PATH_TEMP_WSL     # /mnt/f/Data Temp/NF-PitNET
 
 paths <- local({
   proj <- "C:/Users/tidus/PycharmProjects/Neurosurgery-NF-PitNET"
@@ -38,9 +38,9 @@ paths <- local({
   }
 
   ds <- ifelse(is.null(env$DATASET_PATH),
-               "G:/CMCC Sync/Medical Data/Neurosurgery/NF-PitNET", env$DATASET_PATH)
+               "E:/Medical Data/Neurosurgery/NF-PitNET", env$DATASET_PATH)
   dt <- ifelse(is.null(env$DATASET_PATH_TEMP),
-               "E:/Data Temp/NF-PitNET", env$DATASET_PATH_TEMP)
+               "F:/Data Temp/NF-PitNET", env$DATASET_PATH_TEMP)
 
   list(
     PROJECT_PATH          = proj,

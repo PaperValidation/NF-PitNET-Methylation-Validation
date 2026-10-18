@@ -5,9 +5,10 @@ GEO's ftp.ncbi.nlm.nih.gov is reachable over plain HTTP from this host, unlike
 www.ncbi.nlm.nih.gov (HTTPS handshake times out). Resumable + progress.
 """
 import os, sys, time, urllib.request
+from _paths import DATASET_PATH as BASE
 
 URL = "https://ftp.ncbi.nlm.nih.gov/geo/series/GSE115nnn/GSE115783/matrix/GSE115783_series_matrix.txt.gz"
-OUT = r"G:/CMCC Sync/Medical Data/Neurosurgery/NF-PitNET/GSE115783/GSE115783_series_matrix.txt.gz"
+OUT = os.path.join(BASE, "GSE115783", "GSE115783_series_matrix.txt.gz")
 
 def main():
     os.makedirs(os.path.dirname(OUT), exist_ok=True)

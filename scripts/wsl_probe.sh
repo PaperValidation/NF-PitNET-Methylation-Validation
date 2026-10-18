@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 # run inside WSL: wsl.exe -d Ubuntu-24.04 -- bash <thisfile>
-B="/mnt/g/CMCC Sync/Medical Data/Neurosurgery/NF-PitNET"
+B="/mnt/e/Medical Data/Neurosurgery/NF-PitNET"
 echo "BASE=$B"
 echo "=== downloaded files (size bytes, name) ==="
 ls -la "$B" 2>/dev/null | awk 'NR>1 {print $5"\t"$9}'

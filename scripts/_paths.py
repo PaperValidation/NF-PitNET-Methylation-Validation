@@ -2,8 +2,8 @@
 
 This is the single source of truth for the two data locations:
 
-* ``DATASET_PATH``      -> raw / permanent datasets (G:/CMCC Sync/..., cloud-synced)
-* ``DATASET_PATH_TEMP`` -> intermediate / temp data   (E:/Data Temp/..., local, not synced)
+* ``DATASET_PATH``      -> raw / permanent datasets (E:/Medical Data/..., on disk E:)
+* ``DATASET_PATH_TEMP`` -> intermediate / temp data   (F:/Data Temp/..., local, not synced)
 
 Scripts should import from here instead of hardcoding the base path, so that a
 path change only needs to happen in ``.env``.
@@ -14,8 +14,8 @@ Usage (from a script living inside ``scripts/``)::
         DATASET_PATH, DATASET_PATH_TEMP,
         DATASET_PATH_WSL, DATASET_PATH_TEMP_WSL,
     )
-    # DATASET_PATH      = "G:/CMCC Sync/Medical Data/Neurosurgery/NF-PitNET"
-    # DATASET_PATH_WSL  = "/mnt/g/CMCC Sync/Medical Data/Neurosurgery/NF-PitNET"
+    # DATASET_PATH      = "E:/Medical Data/Neurosurgery/NF-PitNET"
+    # DATASET_PATH_WSL  = "/mnt/e/Medical Data/Neurosurgery/NF-PitNET"
 """
 import os
 import re
@@ -45,7 +45,7 @@ _ENV = _load_env()
 
 
 def _win_to_wsl(win: str) -> str:
-    """Convert a Windows path like ``G:/a/b`` to ``/mnt/g/a/b``."""
+    """Convert a Windows path like ``X:/a/b`` to ``/mnt/x/a/b``."""
     if not win or len(win) < 2:
         return win
     drive = win[0].lower()
@@ -53,8 +53,8 @@ def _win_to_wsl(win: str) -> str:
     return f"/mnt/{drive}/{rest}"
 
 
-DATASET_PATH = _ENV.get("DATASET_PATH", "G:/CMCC Sync/Medical Data/Neurosurgery/NF-PitNET")
-DATASET_PATH_TEMP = _ENV.get("DATASET_PATH_TEMP", "E:/Data Temp/NF-PitNET")
+DATASET_PATH = _ENV.get("DATASET_PATH", "E:/Medical Data/Neurosurgery/NF-PitNET")
+DATASET_PATH_TEMP = _ENV.get("DATASET_PATH_TEMP", "F:/Data Temp/NF-PitNET")
 PROJECT_PATH = _PROJECT_ROOT
 
 DATASET_PATH_WSL = _win_to_wsl(DATASET_PATH)

@@ -2,8 +2,8 @@
 
 > 整理日期：2026-07-29
 > 范围：仅参考深度调研报告中「无功能垂体神经内分泌肿瘤（NF-PitNET）术后再生长」方向
-> 数据根目录：`G:\CMCC Sync\Medical Data\Neurosurgery\NF-PitNET`
-> 参考手册：`G:\CMCC Sync\Medical Data\Guidiance\{生信数据库汇总,生信期刊汇总,生信研究思路汇总}.md`
+> 数据根目录：`E:\Medical Data\Neurosurgery\NF-PitNET`（2026-10-18 更新；原 `G:\CMCC Sync\...` 已失效）
+> 参考手册：`E:\Medical Data\Guidiance\{生信数据库汇总,生信期刊汇总,生信研究思路汇总}.md`
 
 ---
 

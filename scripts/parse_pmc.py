@@ -1,5 +1,6 @@
+from _paths import DATASET_PATH_TEMP as TEMP
 import re, os, json
-html = r"G:\CMCC Sync\Medical Data\Neurosurgery\NF-PitNET\pmc13070495_printable.html"
+html = os.path.join(TEMP, "papers", "pmc13070495_printable.html")
 data = open(html, encoding="utf-8").read()
 text = re.sub(r"<[^>]+>", " ", data)
 text = re.sub(r"&[a-z]+;", " ", text)
@@ -36,6 +37,6 @@ summary = {
   "clusters": ["k1","k2","k3","k4","k5"],
   "gse_in_article": sorted(set(re.findall(r"GSE\d{5,7}", data)))
 }
-out = r"G:\CMCC Sync\Medical Data\Neurosurgery\NF-PitNET\noaf269_summary.json"
+out = os.path.join(TEMP, "intermediates", "noaf269_summary.json")
 open(out,"w",encoding="utf-8").write(json.dumps(summary, ensure_ascii=False, indent=2))
 print("\nWROTE", out)

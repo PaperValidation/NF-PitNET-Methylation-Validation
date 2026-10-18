@@ -29,7 +29,7 @@
 - 目标：PMC 文章 **PMC13070495**（Møller 2025, Neuro-Oncology, DOI 10.1093/neuonc/noaf269）的补充数据包 `noaf269_supplementary_data.zip`。
 - NCBI PMC 下载接口现强制 **Proof-of-Work 反爬挑战**：需满足 `sha256(challenge + str(nonce)).hexdigest()` 以 `"0"*difficulty`（difficulty=4）开头；解出后写入 cookie `cloudpmc-viewer-pow = challenge,nonce`。
 - 解法：`curl` 直连（非 SOCKS 代理，代理 IP 被 403）携带 `Referer` + 浏览器 `User-Agent` 获取挑战页 → Python `hashlib` 逐 nonce 搜索 → 携带 cookie 的 `curl` 下载 zip（1,065,772 bytes）。
-- 产物：`G:/CMCC Sync/Medical Data/Neurosurgery/NF-PitNET/Moller2025_supplement/noaf269_supplementary_data.zip` + `.../Moller2025_supplement/extracted/`（原始数据已迁移至 DATASET_PATH G 盘）。
+- 产物：`E:/Medical Data/Neurosurgery/NF-PitNET/Moller2025_supplement/noaf269_supplementary_data.zip` + `.../Moller2025_supplement/extracted/`（原始数据位于 DATASET_PATH（2026-10-18 起为 E: 盘））。
 
 补充数据包解包后，关键表为 **`Supplementary_File_S2.xlsx`** 的 **"Specific probe methylation"** sheet（563 行 = 562 DMP + 表头）：
 
@@ -177,7 +177,7 @@ Møller 5 簇（均为 silent gonadotroph NF-PitNET）
 
 ## 8. 产物
 
-- `G:/CMCC Sync/Medical Data/Neurosurgery/NF-PitNET/Moller2025_supplement/noaf269_supplementary_data.zip` + `.../Moller2025_supplement/extracted/`（含 `Supplementary_File_S2.xlsx`；原始数据已迁移至 DATASET_PATH G 盘）
+- `E:/Medical Data/Neurosurgery/NF-PitNET/Moller2025_supplement/noaf269_supplementary_data.zip` + `.../Moller2025_supplement/extracted/`（含 `Supplementary_File_S2.xlsx`；原始数据位于 DATASET_PATH（2026-10-18 起为 E: 盘））
 - `scripts/dl_moller_supp.py`（PoW 求解 + 下载）
 - `scripts/moller_dmp_validation.py`（方向一致性 + 二项 + Stouffer meta）
 - `scripts/moller_dmp_mapping.py`（k→队列组决定性映射）
