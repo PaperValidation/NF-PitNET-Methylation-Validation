@@ -52,7 +52,7 @@
 
 | # | Item | Status | Done |
 |---|------|--------|------|
-| E1 | GitHub repository public? | Currently private — **make public on acceptance** (or earlier if journal requires at review) | ☐ |
+| E1 | GitHub repository public? | **Yes — already public** (verified 2026-10-18); URL `github.com/PaperValidation/NF-PitNET-Methylation-Validation` is live for reviewers | ☑ |
 | E2 | Zenodo DOI 10.5281/zenodo.21840024 | Restricted — **publish on acceptance**; creators placeholder "Tidus to be replaced" → replace with author list | ☐ |
 | E3 | Raw data availability | Public (GEO/ArrayExpress/Mendeley) — no upload needed | ☐ |
 | E4 | Analysis scripts committed | `scripts/` — path-canonicalized via `_paths.py`/`paths.R` (commit b5d7fd5 + follow-ups) | ☐ |

@@ -29,7 +29,7 @@ We are pleased to submit our manuscript, *"SF1-lineage identity, not the highest
 **Declarations.**
 - Originality: this work is not under consideration elsewhere and has not been published previously.
 - Ethics: secondary analysis of publicly available, de-identified data; no new ethics approval required.
-- Data availability: all raw data are public (GEO GSE283928/GSE207937/GSE115783/GSE209903, ArrayExpress E-MTAB-7762, Mendeley DOI 10.17632/vr2wb38r6t.1); code and processed data are in our repository (github.com/tiduslrg/NF-PitNET-Methylation-Validation) and archived under Zenodo DOI 10.5281/zenodo.21840024 (restricted until acceptance).
+- Data availability: all raw data are public (GEO GSE283928/GSE207937/GSE115783/GSE209903, ArrayExpress E-MTAB-7762, Mendeley DOI 10.17632/vr2wb38r6t.1); code and processed data are in our repository (github.com/PaperValidation/NF-PitNET-Methylation-Validation) and archived under Zenodo DOI 10.5281/zenodo.21840024 (restricted until acceptance).
 - Conflicts of interest: none.
 
 We believe the manuscript will be of interest to neuro-oncologists, pituitary surgeons, and molecular pathologists, and we thank you for considering it.

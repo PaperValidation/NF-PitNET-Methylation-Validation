@@ -256,7 +256,7 @@ c0 vs non-c0 预后 HR 1.63 / p=0.30 —— **必须如实报告**。它证明"�
 - 软件版本与随机种子（Supplementary Methods 已写）：minfi v1.48.0 / R 4.3.3；scikit-learn 1.5.1，`random_state=42`；置换 20,000 次 seed=0；NN-mixing 置换 5,000 次。
 - 数据来源、DOI、下载链接、本地布局：`docs/data-availability.md`。
 - **原始数据一律不入库**（第三方版权），仓库只放代码 + 处理结果。
-- 代码仓库：`github.com/tiduslrg/NF-PitNET-Methylation-Validation`（当前私有，接收后转 public）。
+- 代码仓库：`github.com/PaperValidation/NF-PitNET-Methylation-Validation`（**已是 public**，2026-10-18 核实；稿件 Data Availability 中的链接可直接使用）。
 
 ---
 

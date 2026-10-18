@@ -25,12 +25,12 @@
 ## 5. 数据/代码归档联动（随作者名单一起改）
 
 - [ ] **Zenodo**（DOI 10.5281/zenodo.21840024）：把 creators 占位 "Tidus to be replaced" 替换为真实作者名单（与稿件一致）；接收后点 **Publish**
-- [ ] **GitHub**（github.com/tiduslrg/NF-PitNET-Methylation-Validation）：接收后（或期刊要求时）把仓库转 **public**
+- [x] **GitHub**（github.com/PaperValidation/NF-PitNET-Methylation-Validation）：**已是 public**（2026-10-18 核实），投稿可直接引用该链接
 - [ ] 稿件 Data Availability（line 352）里的 Zenodo DOI 已就位，无需再改（仅确认文字）
 
 ## 6. 安全事项（与投稿无关，但必须处理）
 
-- [ ] **撤销 GitHub token**：github.com/settings/tokens（`ghp_o42hT…`，此前用于推送，用完即撤）
+- [ ] **撤销 GitHub token**：github.com/settings/tokens（`ghp_o42hT…` 旧 token；**另有 `ghp_ecUct…` 本次推送用，两个都要撤**，用完即撤）
 - [ ] **撤销 Zenodo token**：zenodo.org/account/settings/applications/tokens/（`i7xQtIjp…`）
 
 ## 7. 附：当前可勾选已完成项
